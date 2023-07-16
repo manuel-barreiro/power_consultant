@@ -8,12 +8,12 @@ module.exports = {
   theme: {
     extend: {
       fontFamily: {
-        satoshi: ['Satoshi', 'sans-serif'],
-        inter: ['Inter', 'sans-serif'],
+        inter: ['var(--font-inter)'],
+        montserrat: ['var(--font-montserrat)'],
       },
       colors: {
-        'primary-orange': '#FF5722',
-      }
+        primaryOrange: "#fc7e05", 
+      },
     },
   },
   plugins: [],
