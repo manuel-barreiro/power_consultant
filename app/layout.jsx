@@ -2,13 +2,7 @@
 import './globals.css';
 
 // NextFonts
-import { Inter, Montserrat } from 'next/font/google'
-
-const inter = Inter({
-  subsets: ['latin'],
-  display: 'swap',
-  variable: '--font-inter',
-})
+import { Montserrat } from 'next/font/google'
 
 const montserrat = Montserrat({
   subsets: ['latin'],
@@ -28,16 +22,12 @@ import Nav from '@components/Nav';
 
 const RootLayout = ({children}) => {
   return (
-    <html lang='en' className={`${inter.variable} ${montserrat.variable}`}>
+    <html lang='en' className={`${montserrat.variable}`}>
         <body>
-            <div className='main'>
-                <div className='gradient' />
-            </div>
-
-            <main className='app'>
-                <Nav />
-                {children}
-            </main>
+          <Nav />
+          <main>
+            {children}
+          </main>
         </body>
     </html>
   )

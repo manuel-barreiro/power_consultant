@@ -1,19 +1,42 @@
+import { logoPower } from "@public"
 import Image from "next/image"
+import Link from "next/link"
 
 const Nav = () => {
   return (
-    <nav className="container mx-auto w-full py-5 flex justify-between items-center border-b-2 border-gray-500 border-opacity-30 bg-neutral-100/20 font-montserrat">
-      <div className="flex justify-evenly items-center cursor-pointer">
-        <Image src='/images/logoPower.png' alt="Logo Power Consultant" width={60} height={60} />
-        <p className="text-2xl font-semibold ml-2">Power Consultant </p>
+    <nav className="font-montserrat flex justify-between items-center w-full h-20 lg:h-[12vh] shadow-navbarShadow px-8">
+
+      <div>
+        <Image src={logoPower} width={65} alt="logo" />
       </div>
-        <ul className="flex justify-evenly gap-5 text-primaryOrange">
-          <li className="cursor-pointer hover:border-b-2 border-opacity-20 border-primaryOrange">Inicio</li>
-          <li className="cursor-pointer hover:border-b-2 border-opacity-20 border-primaryOrange">Productos</li>
-          <li className="cursor-pointer hover:border-b-2 border-opacity-20 border-primaryOrange">Integraciones</li>
-          <li className="cursor-pointer hover:border-b-2 border-opacity-20 border-primaryOrange">Servicio Técnico</li>
-          <li className="cursor-pointer hover:border-b-2 border-opacity-20 border-primaryOrange">Contacto</li>
+
+      {/* Desktop Menu */}
+      <div className="hidden lg:flex">
+        <ul className="flex justify-evenly items-center gap-10">
+          <Link href="/">
+            <li>Home</li>
+          </Link>
+          <Link href="/productos">
+            <li>Productos</li>
+          </Link>
+          <Link href="/servicioTecnico">
+            <li>Servicio Técnico</li>
+          </Link>
+          <Link href="/contacto">
+            <li>Contacto</li>
+          </Link>
         </ul>
+      </div>
+      
+      {/* Mobile Menu */}
+
+      <div className='w-6 h-5 flex flex-col justify-between items-center md:hidden text-4xl text-primaryOrange cursor-pointer overflow-hidden group'>
+        <span className='w-full h-[2px] bg-primaryOrange inline-flex transform group-hover:translate-x-2 transition-all ease-in-out duration-300'></span>
+        <span className='w-full h-[2px] bg-primaryOrange inline-flex transform translate-x-3 group-hover:translate-x-0 transition-all ease-in-out duration-300'></span>
+        <span className='w-full h-[2px] bg-primaryOrange inline-flex transform translate-x-1 group-hover:translate-x-3 transition-all ease-in-out duration-300'></span>
+      </div>
+
+      
     </nav>
   )
 }

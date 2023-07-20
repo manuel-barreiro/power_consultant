@@ -7,12 +7,18 @@ module.exports = {
   ],
   theme: {
     extend: {
+
       fontFamily: {
-        inter: ['var(--font-inter)'],
         montserrat: ['var(--font-montserrat)'],
       },
+
       colors: {
-        primaryOrange: "#fc7e05", 
+        primaryOrange: "#EF7E21",
+        secondaryOrange: "#F9995D",
+      },
+      
+      boxShadow: {
+        navbarShadow: "0 10px 30px -10px rgba(2,12,27,0.7)",
       },
     },
   },
