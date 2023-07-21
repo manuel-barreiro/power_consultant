@@ -1,40 +1,190 @@
+'use client';
+
+import { useState } from 'react'
 import { logoPower } from "@public"
 import Image from "next/image"
 import Link from "next/link"
 
+import { motion } from 'framer-motion'
+import { MdOutlineClose } from 'react-icons/md'
+
+import { TbBrandGithub } from "react-icons/tb";
+import { SlSocialTwitter, SlSocialLinkedin } from "react-icons/sl";
+import { AiOutlineWhatsApp } from "react-icons/ai";
+
 const Nav = () => {
+
+  /* state and handle function to display mobile menu */
+
+  const [showMenu, setShowMenu] = useState(false);
+
+  function handleShowMenu() {
+    setShowMenu((prevState) => !prevState)
+    console.log(showMenu)
+  }
+
+  /* ------------------------------------------------ */
+
   return (
-    <nav className="font-montserrat flex justify-between items-center w-full h-20 lg:h-[12vh] shadow-navbarShadow px-8">
+    <nav className="font-montserrat flex justify-between items-center w-full h-20 lg:h-[12vh] sticky top-0 z-50 shadow-navbarShadow px-8 md:px-16 md:py-10 ">
 
       <div>
-        <Image src={logoPower} width={65} alt="logo" />
+        <Link href="/">
+          <Image src={logoPower} width={65} alt="logo" />
+        </Link>
       </div>
 
       {/* Desktop Menu */}
-      <div className="hidden lg:flex">
+      <div className="hidden md:flex">
         <ul className="flex justify-evenly items-center gap-10">
           <Link href="/">
-            <li>Home</li>
+            <li 
+              className="
+                hover:scale-105 
+                hover:underline underline-offset-8 decoration-primaryOrange 
+                hover:text-primaryOrange
+                ease-in-out duration-300">
+                  Home
+            </li>
           </Link>
           <Link href="/productos">
-            <li>Productos</li>
+            <li 
+              className="
+                hover:scale-105 
+                hover:underline underline-offset-8 decoration-primaryOrange 
+                hover:text-primaryOrange
+                ease-in-out duration-300">
+                  Productos
+            </li>
           </Link>
           <Link href="/servicioTecnico">
-            <li>Servicio Técnico</li>
+            <li 
+              className="
+                hover:scale-105 
+                hover:underline underline-offset-8 decoration-primaryOrange 
+                hover:text-primaryOrange
+                ease-in-out duration-300">
+                  Servicio Técnico
+            </li>
           </Link>
           <Link href="/contacto">
-            <li>Contacto</li>
+            <li 
+              onClick={handleShowMenu}
+              className="
+                hover:scale-105 
+                hover:underline underline-offset-8 decoration-primaryOrange 
+                hover:text-primaryOrange
+                ease-in-out duration-300">
+                  Contacto
+            </li>
           </Link>
         </ul>
       </div>
       
       {/* Mobile Menu */}
 
-      <div className='w-6 h-5 flex flex-col justify-between items-center md:hidden text-4xl text-primaryOrange cursor-pointer overflow-hidden group'>
+      <div onClick={handleShowMenu} className='w-6 h-5 flex flex-col justify-between items-center md:hidden text-4xl text-primaryOrange cursor-pointer overflow-hidden group'>
         <span className='w-full h-[2px] bg-primaryOrange inline-flex transform group-hover:translate-x-2 transition-all ease-in-out duration-300'></span>
         <span className='w-full h-[2px] bg-primaryOrange inline-flex transform translate-x-3 group-hover:translate-x-0 transition-all ease-in-out duration-300'></span>
         <span className='w-full h-[2px] bg-primaryOrange inline-flex transform translate-x-1 group-hover:translate-x-3 transition-all ease-in-out duration-300'></span>
       </div>
+      {showMenu && (
+                    <div 
+                        className='absolute mdl:hidden top-0 right-0 w-full h-screen bg-black/50 flex flex-col col items-end'
+                    >
+                        <motion.div
+                            initial={{ x: 20, opacity: 0 }}
+                            animate={{ x: 0,  opacity: 1 }}
+                            transition={{ duration: 0.1 }}
+                            className='w-[80%] h-full overflow-y-scroll scrollbarHide bg-white flex flex-col items-center px-4 py-10 relative'
+                        >
+                            <MdOutlineClose onClick={handleShowMenu} className='text-3xl text-primaryOrange cursor-pointer hover:text-red-500 absolute top-4 right-4'/>
+
+                            <div className='flex flex-col justify-center text-base gap-7'>
+                                <ul className='flex flex-col text-base gap-7'>
+                                    <Link
+                                        href="/"
+                                        className='font-medium hover:text-primaryOrange hover:underline underline-offset-8 decoration-primaryOrange cursor-pointer duration-300 nav-link'
+                                    >
+                                        <motion.li 
+                                            initial={{ x: 20, opacity:0 }}
+                                            animate={{ x: 0,  opacity: 1 }}
+                                            transition= {{
+                                                duration: 0.2,
+                                                delay: 0.1,
+                                                ease: "easeIn", 
+                                            }}
+                                        >
+                                            Home
+                                        </motion.li>
+                                    </Link>
+                                    <Link 
+                                        href="/productos" 
+                                        className='font-medium hover:text-primaryOrange hover:underline underline-offset-8 decoration-primaryOrange cursor-pointer duration-300 nav-link'
+                                    >
+                                        <motion.li 
+                                            initial={{ x: 20, opacity:0 }}
+                                            animate={{ x: 0,  opacity: 1 }}
+                                            transition= {{
+                                                duration: 0.2,
+                                                delay: 0.2,
+                                                ease: "easeIn", 
+                                            }}
+                                        >
+                                            Productos
+                                        </motion.li>
+                                    </Link>
+                                    <Link
+                                        href="/servicioTecnico" 
+                                        className='font-medium hover:text-primaryOrange hover:underline underline-offset-8 decoration-primaryOrange cursor-pointer duration-300 nav-link'
+                                    >
+                                        <motion.li 
+                                            initial={{ x: 20, opacity:0 }}
+                                            animate={{ x: 0,  opacity: 1 }}
+                                            transition= {{
+                                                duration: 0.2,
+                                                delay: 0.3,
+                                                ease: "easeIn", 
+                                            }}
+                                        >
+                                            Servicio Técnico
+                                        </motion.li>
+                                    </Link>
+                                </ul>
+                                <a href="/contacto" target='_blank'>
+                                    <motion.button
+                                        initial={{ opacity: 0 }} 
+                                        animate={{ opacity: 1 }}
+                                        transition={{ delay: 0.6, ease: "easeIn" }}
+                                        className='px-4 py-2 rounded-md text-white bg-primaryOrange text-[13px] border border-primaryOrange hover:bg-white
+                                        hover:text-primaryOrange duration-300 w-full'
+                                    >
+                                        Contacto
+                                    </motion.button>
+                                </a>
+                                <div className="flex gap-6">
+                                    <a href="https://www.linkedin.com/in/manuel-barreiro/" target="_blank">
+                                        <span className="w-10 h-10 text-xl bg-black text-white rounded-full inline-flex items-center justify-center hover:text-primaryOrange cursor-pointer hover:-translate-y-2 transition-all duration-300">
+                                            <SlSocialLinkedin />
+                                        </span>
+                                    </a>
+                                    <a href="https://twitter.com/ing_Barreiro" target="_blank">
+                                        <span className="w-10 h-10 text-xl bg-black text-white rounded-full inline-flex items-center justify-center hover:text-primaryOrange cursor-pointer hover:-translate-y-2 transition-all duration-300">
+                                            <SlSocialTwitter />
+                                        </span>
+                                    </a>
+                                    <a href="https://wa.me/+5491166726968" target="_blank">
+                                        <span className="w-10 h-10 text-xl bg-black text-white rounded-full inline-flex items-center justify-center hover:text-primaryOrange cursor-pointer hover:-translate-y-2 transition-all duration-300">
+                                            <AiOutlineWhatsApp />
+                                        </span>
+                                    </a>
+                                </div>
+                            </div>
+                        </motion.div>
+                    </div>
+                )}
+  
+
 
       
     </nav>
