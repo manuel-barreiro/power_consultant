@@ -4,11 +4,8 @@ import { useState } from 'react'
 import { logoPower } from "@public"
 import Image from "next/image"
 import Link from "next/link"
-
 import { motion } from 'framer-motion'
 import { MdOutlineClose } from 'react-icons/md'
-
-import { TbBrandGithub } from "react-icons/tb";
 import { SlSocialTwitter, SlSocialLinkedin } from "react-icons/sl";
 import { AiOutlineWhatsApp } from "react-icons/ai";
 
@@ -26,56 +23,80 @@ const Nav = () => {
   /* ------------------------------------------------ */
 
   return (
-    <nav className="font-montserrat flex justify-between items-center w-full h-20 lg:h-[12vh] sticky top-0 z-50 shadow-navbarShadow px-8 md:px-16 md:py-10 ">
+    <nav className="font-montserrat flex justify-between items-center w-full h-20 lg:h-[12vh] sticky top-0 z-50 shadow-navbarShadow px-8 md:px-16 md:py-10 bg-white">
 
-      <div>
+      <motion.div
+        initial={{ opacity: 0 }}
+        animate={{ opacity: 1 }}
+        transition= {{ duration: 1 }}
+      >
         <Link href="/">
           <Image src={logoPower} width={65} alt="logo" />
         </Link>
-      </div>
+      </motion.div>
 
       {/* Desktop Menu */}
       <div className="hidden md:flex">
-        <ul className="flex justify-evenly items-center gap-10">
-          <Link href="/">
-            <li 
-              className="
+        <ul className="flex justify-evenly items-center gap-10 font-medium">
+          <Link 
+            href="/"
+            className="
                 hover:scale-105 
                 hover:underline underline-offset-8 decoration-primaryOrange 
                 hover:text-primaryOrange
-                ease-in-out duration-300">
+                ease-in-out duration-300"
+          >
+            <motion.li
+              initial={{ y: -10, opacity: 0 }}
+              animate={{ y: 0,  opacity: 1 }}
+              transition= {{ duration: 0.1 }}
+            >
                   Home
-            </li>
+            </motion.li>
           </Link>
-          <Link href="/productos">
-            <li 
-              className="
+          <Link 
+            href="/productos"
+            className="
                 hover:scale-105 
                 hover:underline underline-offset-8 decoration-primaryOrange 
                 hover:text-primaryOrange
-                ease-in-out duration-300">
+                ease-in-out duration-300"
+          >
+            <motion.li
+              initial={{ y: -10, opacity: 0 }}
+              animate={{ y: 0,  opacity: 1 }}
+              transition= {{ duration: 0.1, delay: 0.1 }}
+            >
                   Productos
-            </li>
+            </motion.li>
           </Link>
-          <Link href="/servicioTecnico">
-            <li 
-              className="
+          <Link 
+            href="/servicioTecnico"
+            className="
                 hover:scale-105 
                 hover:underline underline-offset-8 decoration-primaryOrange 
                 hover:text-primaryOrange
-                ease-in-out duration-300">
-                  Servicio Técnico
-            </li>
+                ease-in-out duration-300"
+          >
+            <motion.li
+              initial={{ y: -10, opacity: 0 }}
+              animate={{ y: 0,  opacity: 1 }}
+              transition= {{ duration: 0.1, delay: 0.2 }}
+            >
+                  Servicio técnico
+            </motion.li>
           </Link>
           <Link href="/contacto">
-            <li 
-              onClick={handleShowMenu}
-              className="
-                hover:scale-105 
-                hover:underline underline-offset-8 decoration-primaryOrange 
-                hover:text-primaryOrange
-                ease-in-out duration-300">
+            <li>
+              <motion.button
+                  initial={{ opacity: 0 }} 
+                  animate={{ opacity: 1 }}
+                  transition={{ delay: 0.6, ease: "easeIn" }}
+                  className='px-4 py-2 rounded-md text-white bg-primaryOrange border border-primaryOrange hover:bg-white
+                  hover:text-primaryOrange duration-300 w-full'
+              >
                   Contacto
+              </motion.button>
             </li>
           </Link>
         </ul>
@@ -90,7 +111,7 @@ const Nav = () => {
       </div>
       {showMenu && (
                     <div 
-                        className='absolute mdl:hidden top-0 right-0 w-full h-screen bg-black/50 flex flex-col col items-end'
+                        className='absolute md:hidden top-0 right-0 w-full h-screen bg-black/50 flex flex-col col items-end'
                     >
                         <motion.div
                             initial={{ x: 20, opacity: 0 }}
@@ -100,7 +121,7 @@ const Nav = () => {
                         >
                             <MdOutlineClose onClick={handleShowMenu} className='text-3xl text-primaryOrange cursor-pointer hover:text-red-500 absolute top-4 right-4'/>
 
-                            <div className='flex flex-col justify-center text-base gap-7'>
+                            <div className='flex flex-col justify-center items-center text-base gap-7'>
                                 <ul className='flex flex-col text-base gap-7'>
                                     <Link
                                         href="/"
@@ -150,18 +171,20 @@ const Nav = () => {
                                             Servicio Técnico
                                         </motion.li>
                                     </Link>
-                                </ul>
-                                <a href="/contacto" target='_blank'>
-                                    <motion.button
-                                        initial={{ opacity: 0 }} 
-                                        animate={{ opacity: 1 }}
-                                        transition={{ delay: 0.6, ease: "easeIn" }}
-                                        className='px-4 py-2 rounded-md text-white bg-primaryOrange text-[13px] border border-primaryOrange hover:bg-white
-                                        hover:text-primaryOrange duration-300 w-full'
-                                    >
-                                        Contacto
-                                    </motion.button>
-                                </a>
+                                    <Link href="/contacto">
+                                      <li>
+                                      <motion.button
+                                          initial={{ opacity: 0 }} 
+                                          animate={{ opacity: 1 }}
+                                          transition={{ delay: 0.6, ease: "easeIn" }}
+                                          className='px-4 py-2 rounded-md text-white bg-primaryOrange border border-primaryOrange hover:bg-white
+                                          hover:text-primaryOrange duration-300 w-full'
+                                      >
+                                          Contacto
+                                      </motion.button>
+                                      </li>
+                                    </Link>
+                                </ul>                               
                                 <div className="flex gap-6">
                                     <a href="https://www.linkedin.com/in/manuel-barreiro/" target="_blank">
                                         <span className="w-10 h-10 text-xl bg-black text-white rounded-full inline-flex items-center justify-center hover:text-primaryOrange cursor-pointer hover:-translate-y-2 transition-all duration-300">

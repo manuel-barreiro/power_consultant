@@ -2,3 +2,26 @@
 @tailwind components;
 @tailwind utilities;
 
+/* Hero Gradient */
+
+#skew-bg {
+    position: absolute;
+    width: 100%;
+    height: 100vh;
+    background-image: linear-gradient(26deg, #FFF 0%, #FFB377 14.63%, #F8AA6D 26.04%, #FF7100 49.48%, #E48558 79.40%);
+    transform: skewY(-10deg);
+    top: -20%;
+    z-index: -1;
+}
+
+@media screen and (max-width: 768px)  {
+    #skew-bg {
+        position: absolute;
+        width: 100%;
+        height: 100vh;
+        background-image: linear-gradient(26deg, #FFF 0%, #FFB377 14.63%, #F8AA6D 26.04%, #FF7100 49.48%, #E48558 79.40%);
+        transform: skewY(-25deg);
+        top: -20%;
+        z-index: -1;
+    }
+}
