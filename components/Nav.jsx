@@ -89,9 +89,9 @@ const Nav = () => {
           <Link href="/contacto">
             <li>
               <motion.button
-                  initial={{ opacity: 0 }} 
-                  animate={{ opacity: 1 }}
-                  transition={{ delay: 0.6, ease: "easeIn" }}
+                  initial={{ y: -10, opacity: 0 }}
+                  animate={{ y: 0,  opacity: 1 }}
+                  transition= {{ duration: 0.1, delay: 0.3 }}
                   className='px-4 py-2 rounded-md text-white bg-primaryOrange border border-primaryOrange hover:bg-white
                   hover:text-primaryOrange duration-300 w-full'
               >
@@ -174,9 +174,9 @@ const Nav = () => {
                                     <Link href="/contacto">
                                       <li>
                                       <motion.button
-                                          initial={{ opacity: 0 }} 
-                                          animate={{ opacity: 1 }}
-                                          transition={{ delay: 0.6, ease: "easeIn" }}
+                                          initial={{ x: 20, opacity: 0 }}
+                                          animate={{ x: 0,  opacity: 1 }}
+                                          transition= {{ duration: 0.1, delay: 0.4 }}
                                           className='px-4 py-2 rounded-md text-white bg-primaryOrange border border-primaryOrange hover:bg-white
                                           hover:text-primaryOrange duration-300 w-full'
                                       >
@@ -185,7 +185,12 @@ const Nav = () => {
                                       </li>
                                     </Link>
                                 </ul>                               
-                                <div className="flex gap-6">
+                                <motion.div 
+                                  initial={{ x: 20, opacity: 0 }}
+                                  animate={{ x: 0,  opacity: 1 }}
+                                  transition= {{ duration: 0.1, delay: 0.6 }}
+                                  className="flex gap-6"
+                                >
                                     <a href="https://www.linkedin.com/in/manuel-barreiro/" target="_blank">
                                         <span className="w-10 h-10 text-xl bg-black text-white rounded-full inline-flex items-center justify-center hover:text-primaryOrange cursor-pointer hover:-translate-y-2 transition-all duration-300">
                                             <SlSocialLinkedin />
@@ -201,7 +206,7 @@ const Nav = () => {
                                             <AiOutlineWhatsApp />
                                         </span>
                                     </a>
-                                </div>
+                                </motion.div>
                             </div>
                         </motion.div>
                     </div>
