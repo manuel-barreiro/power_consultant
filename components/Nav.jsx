@@ -23,7 +23,7 @@ const Nav = () => {
   /* ------------------------------------------------ */
 
   return (
-    <nav className="font-montserrat flex justify-between items-center w-full h-20 lg:h-[12vh] sticky top-0 z-50 shadow-navbarShadow px-8 md:px-16 md:py-10 bg-white">
+    <nav className="font-montserrat flex justify-between items-center w-full h-20 lg:h-[12vh] sticky top-0 z-50 shadow-navbarShadow px-8 md:px-32 md:py-10 bg-white">
 
       <motion.div
         initial={{ opacity: 0 }}
@@ -87,28 +87,35 @@ const Nav = () => {
             </motion.li>
           </Link>
           <Link href="/contacto">
-            <li>
-              <motion.button
-                  initial={{ y: -10, opacity: 0 }}
-                  animate={{ y: 0,  opacity: 1 }}
-                  transition= {{ duration: 0.1, delay: 0.3 }}
+            <motion.li
+              initial={{ y: -10, opacity: 0 }}
+              animate={{ y: 0,  opacity: 1 }}
+              transition= {{ duration: 0.1, delay: 0.3 }}
+            >
+              <button
                   className='px-4 py-2 rounded-md text-white bg-primaryOrange border border-primaryOrange hover:bg-white
                   hover:text-primaryOrange duration-300 w-full'
               >
                   Contacto
-              </motion.button>
-            </li>
+              </button>
+            </motion.li>
           </Link>
         </ul>
       </div>
       
       {/* Mobile Menu */}
 
-      <div onClick={handleShowMenu} className='w-6 h-5 flex flex-col justify-between items-center md:hidden text-4xl text-primaryOrange cursor-pointer overflow-hidden group'>
-        <span className='w-full h-[2px] bg-primaryOrange inline-flex transform group-hover:translate-x-2 transition-all ease-in-out duration-300'></span>
-        <span className='w-full h-[2px] bg-primaryOrange inline-flex transform translate-x-3 group-hover:translate-x-0 transition-all ease-in-out duration-300'></span>
-        <span className='w-full h-[2px] bg-primaryOrange inline-flex transform translate-x-1 group-hover:translate-x-3 transition-all ease-in-out duration-300'></span>
-      </div>
+      <motion.div
+        onClick={handleShowMenu} 
+        className='w-6 h-5 flex flex-col justify-between items-center md:hidden text-4xl text-primaryOrange cursor-pointer overflow-hidden group'
+        initial={{ opacity: 0 }}
+        animate={{ opacity: 1 }}
+        transition= {{ duration: 1 }}
+        >
+          <span className='w-full h-[2px] bg-primaryOrange inline-flex transform group-hover:translate-x-2 transition-all ease-in-out duration-300'></span>
+          <span className='w-full h-[2px] bg-primaryOrange inline-flex transform translate-x-3 group-hover:translate-x-0 transition-all ease-in-out duration-300'></span>
+          <span className='w-full h-[2px] bg-primaryOrange inline-flex transform translate-x-1 group-hover:translate-x-3 transition-all ease-in-out duration-300'></span>
+      </motion.div>
       {showMenu && (
                     <div 
                         className='absolute md:hidden top-0 right-0 w-full h-screen bg-black/50 flex flex-col col items-end'
@@ -172,17 +179,18 @@ const Nav = () => {
                                         </motion.li>
                                     </Link>
                                     <Link href="/contacto">
-                                      <li>
-                                      <motion.button
-                                          initial={{ x: 20, opacity: 0 }}
-                                          animate={{ x: 0,  opacity: 1 }}
-                                          transition= {{ duration: 0.1, delay: 0.4 }}
-                                          className='px-4 py-2 rounded-md text-white bg-primaryOrange border border-primaryOrange hover:bg-white
-                                          hover:text-primaryOrange duration-300 w-full'
+                                      <motion.li
+                                       initial={{ x: 20, opacity: 0 }}
+                                       animate={{ x: 0,  opacity: 1 }}
+                                       transition= {{ duration: 0.1, delay: 0.4 }}
                                       >
-                                          Contacto
-                                      </motion.button>
-                                      </li>
+                                        <button
+                                            className='px-4 py-2 rounded-md text-white bg-primaryOrange border border-primaryOrange hover:bg-white
+                                            hover:text-primaryOrange duration-300 w-full'
+                                        >
+                                            Contacto
+                                        </button>
+                                      </motion.li>
                                     </Link>
                                 </ul>                               
                                 <motion.div 
