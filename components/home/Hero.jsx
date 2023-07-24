@@ -7,11 +7,11 @@ import { hero } from "@public";
 
 const Hero = () => {
   return (
-    <div>
+    <section className="h-auto md:h-[80vh]">
 
         <span id="skew-bg"></span>
 
-        <div className="w-full h-[80vh] flex justify-center items-center container px-8 md:px-32 pt-6 mt-4 mx-auto">
+        <div className="w-full h-full flex justify-center items-center container px-8 md:px-32 pt-20 md:pt-10 mx-auto">
 
             <div className="w-full flex flex-col gap-7 justify-between items md:flex-row md:gap-0">
 
@@ -51,7 +51,7 @@ const Hero = () => {
       
         </div>
 
-    </div>
+    </section>
     
   )
 }

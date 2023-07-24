@@ -14,7 +14,7 @@ const montserrat = Montserrat({
 // Metadata
 export const metadata = {
     title: 'Power Consultant S.A.',
-    description: 'Power Consultant Cajeros Automaticos'
+    description: 'Cajeros Automaticos | Soluciones Tecnológicas'
 }
 
 // Layout Components
@@ -22,7 +22,7 @@ import Nav from '@components/Nav';
 
 const RootLayout = ({children}) => {
   return (
-    <html lang='en' className={`${montserrat.variable}`}>
+    <html lang='es' className={`${montserrat.variable}`}>
         <body>
           <Nav />
           <main>
