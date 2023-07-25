@@ -17,12 +17,12 @@ const Hero = () => {
 
                 <div className="basis-2/3">
 
-                    <motion.div
+                     <motion.div
                         initial={{ y: 10, opacity: 0 }}
                         animate={{ y: 0, opacity: 1 }}
                         transition= {{ duration: 0.5, delay: 0.5 }} 
                     >
-                        <h1 className="pb-4 font-bold text-5xl md:text-6xl lg:text-7xl bg-gradient-to-tr from-neutral-900 to-neutral-500 bg-clip-text text-transparent">Líderes en <br className="hidden md:flex" />soluciones<br className="hidden md:flex" />  tecnológicas</h1>
+                        <h1 className="pb-4 font-bold text-4xl xs:text-5xl md:text-6xl lg:text-7xl bg-gradient-to-tr from-neutral-900 to-neutral-500 bg-clip-text text-transparent">Líderes en <br className="hidden md:flex" />soluciones<br className="hidden md:flex" />  tecnológicas</h1>
                     </motion.div>
                     
                     <motion.div
@@ -31,9 +31,11 @@ const Hero = () => {
                         transition= {{ duration: 0.5, delay: 0.7 }} 
                         className="mt-2 md:mt-6"
                     >
-                        <button className='px-4 py-2 rounded-md md:text-lg text-white bg-gradient-to-tr from-neutral-900 to-neutral-500 hover:scale-105 ease-in-out duration-300'>
-                            ¿Quiénes Somos?
-                        </button>
+                        <Link href="#quienesSomos">
+                            <button className='px-4 py-2 rounded-md md:text-lg text-white bg-gradient-to-tr from-neutral-900 to-neutral-500 hover:scale-105 ease-in-out duration-300'>
+                                ¿Quiénes Somos?
+                            </button>
+                        </Link>
                     </motion.div>
                 </div>
 

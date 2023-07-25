@@ -5,7 +5,7 @@ import Image from "next/image"
 
 const NuestroDiferencial = () => {
   return (
-    <section className="h-auto py-20 w-full bg-backgroundGray">
+    <section id="nuestroDiferencial" className="h-auto py-20 w-full bg-backgroundGray">
 
         <div className="w-full h-full flex flex-col gap-16 justify-center items-center container px-8 md:px-32 mx-auto">
 
