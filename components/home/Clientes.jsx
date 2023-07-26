@@ -26,67 +26,67 @@ const Clientes = () => {
             blurBoderColor={'#fff'}
         >
             <Slider.Slide>
-                <Image src={aerolineas} className='w-40' alt="aerolineas"/>
+                <Image priority={true} src={aerolineas} className='w-40' alt="aerolineas"/>
             </Slider.Slide>
             <Slider.Slide>
-                <Image src={anses} className='w-40' alt="anses" />
+                <Image priority={true} src={anses} className='w-40' alt="anses" />
             </Slider.Slide>
             <Slider.Slide>
-                <Image src={bancoChaco} className='w-40' alt="bancoChaco" />
+                <Image priority={true} src={bancoChaco} className='w-40' alt="bancoChaco" />
             </Slider.Slide>
             <Slider.Slide>
-              <Image src={bancoChubut} className='w-40' alt="bancoChubut" />
+              <Image priority={true} src={bancoChubut} className='w-40' alt="bancoChubut" />
             </Slider.Slide>
             <Slider.Slide>
-              <Image src={bancoCiudad} className='w-40' alt="bancoCiudad" />
+              <Image priority={true} src={bancoCiudad} className='w-40' alt="bancoCiudad" />
             </Slider.Slide>
             <Slider.Slide>
-              <Image src={bancoColumbia} className='w-40' alt="bancoColumbia" />
+              <Image priority={true} src={bancoColumbia} className='w-40' alt="bancoColumbia" />
             </Slider.Slide>
             <Slider.Slide>
-              <Image src={bancoIndustrial} className='w-40' alt="bancoIndustrial" />
+              <Image priority={true} src={bancoIndustrial} className='w-40' alt="bancoIndustrial" />
             </Slider.Slide>
             <Slider.Slide>
-              <Image src={bancoPatagonia} className='w-40' alt="bancoPatagonia" />
+              <Image priority={true} src={bancoPatagonia} className='w-40' alt="bancoPatagonia" />
             </Slider.Slide>
             <Slider.Slide>
-              <Image src={bancoTierraDelFuego} className='w-40' alt="bancoTierraDelFuego" />
+              <Image priority={true} src={bancoTierraDelFuego} className='w-40' alt="bancoTierraDelFuego" />
             </Slider.Slide>
             <Slider.Slide>
-              <Image src={bancoProvincia} className='w-40' alt="bancoProvincia" />
+              <Image priority={true} src={bancoProvincia} className='w-40' alt="bancoProvincia" />
             </Slider.Slide>
             <Slider.Slide>
-              <Image src={BBVA} className='w-40' alt="BBVA" />
+              <Image priority={true} src={BBVA} className='w-40' alt="BBVA" />
             </Slider.Slide>
             <Slider.Slide>
-              <Image src={cemic} className='w-40' alt="cemic" />
+              <Image priority={true} src={cemic} className='w-40' alt="cemic" />
             </Slider.Slide>
             <Slider.Slide>
-              <Image src={cencosud} className='w-40' alt="cencosud" />
+              <Image priority={true} src={cencosud} className='w-40' alt="cencosud" />
             </Slider.Slide>
             <Slider.Slide>
-              <Image src={codere} className='w-40' alt="codere" />
+              <Image priority={true} src={codere} className='w-40' alt="codere" />
             </Slider.Slide>
             <Slider.Slide>
-              <Image src={cordial} className='w-40' alt="cordial" />
+              <Image priority={true} src={cordial} className='w-40' alt="cordial" />
             </Slider.Slide>
             <Slider.Slide>
-              <Image src={globalBlue} className='w-40' alt="globalBlue" />
+              <Image priority={true} src={globalBlue} className='w-40' alt="globalBlue" />
             </Slider.Slide>
             <Slider.Slide>
-              <Image src={rapidoArgentino} className='w-40' alt="rapidoArgentino" />
+              <Image priority={true} src={rapidoArgentino} className='w-40' alt="rapidoArgentino" />
             </Slider.Slide>
             <Slider.Slide>
-              <Image src={siderca} className='w-40' alt="siderca" />
+              <Image priority={true} src={siderca} className='w-40' alt="siderca" />
             </Slider.Slide>
             <Slider.Slide>
-              <Image src={telefonica} className='w-40' alt="telefonica" />
+              <Image priority={true} src={telefonica} className='w-40' alt="telefonica" />
             </Slider.Slide>
             <Slider.Slide>
-              <Image src={ternium} className='w-40' alt="ternium" />
+              <Image priority={true} src={ternium} className='w-40' alt="ternium" />
             </Slider.Slide>
             <Slider.Slide>
-              <Image src={univPalermo} className='w-40' alt="univPalermo" />
+              <Image priority={true} src={univPalermo} className='w-40' alt="univPalermo" />
             </Slider.Slide>
         </Slider>
       </div>
