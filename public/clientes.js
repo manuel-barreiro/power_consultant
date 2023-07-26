@@ -20,7 +20,6 @@ import Cliente24 from './images/clientes/cliente_24.png'
 import Cliente25 from './images/clientes/cliente_25.png'
 import Cliente26 from './images/clientes/cliente_26.png'
 
-const clientImages = [Cliente6, Cliente7, Cliente8, Cliente9, Cliente10, Cliente11, Cliente12, Cliente13, Cliente14, Cliente15, Cliente16, Cliente17, Cliente18, Cliente19, Cliente20, Cliente21, Cliente22, Cliente23, Cliente24, Cliente25, Cliente26 ]
+export {Cliente6, Cliente7, Cliente8, Cliente9, Cliente10, Cliente11, Cliente12, Cliente13, Cliente14, Cliente15, Cliente16, Cliente17, Cliente18, Cliente19, Cliente20, Cliente21, Cliente22, Cliente23, Cliente24, Cliente25, Cliente26 };
 
-export { clientImages };
 
