@@ -19,6 +19,7 @@ export const metadata = {
 
 // Layout Components
 import Nav from '@components/Nav';
+import Footer from '@components/Footer';
 
 const RootLayout = ({children}) => {
   return (
@@ -28,6 +29,7 @@ const RootLayout = ({children}) => {
           <main>
             {children}
           </main>
+          <Footer />
         </body>
     </html>
   )
