@@ -11,9 +11,9 @@ import { aerolineas, anses, bancoChaco, bancoChubut, bancoCiudad, bancoColumbia,
 const Clientes = () => {
 
   return (
-    <section className='h-auto py-32 w-full overflow-hidden bg-backgroundGray'>
+    <section className='h-auto py-20 w-full overflow-hidden bg-backgroundGray'>
 
-      <div className='w-full h-full flex flex-col gap-20 justify-evenly items-center container px-8 md:px-32 mx-auto overflow-hidden text-center'>
+      <div className='w-full h-full flex flex-col gap-12 justify-evenly items-center container px-8 md:px-32 mx-auto overflow-hidden text-center'>
       
         <h1 className='text-3xl font-bold py-4 text-center'>Confían en nosotros</h1>
       
