@@ -3,7 +3,8 @@ import QuienesSomos from "@components/home/QuienesSomos"
 import NuestroDiferencial from "@components/home/NuestroDiferencial"
 import Experiencia from "@components/home/Experiencia"
 import Clientes from "@components/home/Clientes"
-import Contacto from "@components/home/Contacto"
+import ProductosHome from "@components/home/ProductosHome"
+import ContactForm from "@components/home/ContactForm"
 
 const Home = () => {
   return (
@@ -13,7 +14,8 @@ const Home = () => {
       <NuestroDiferencial />
       <Experiencia />
       <Clientes />
-      <Contacto/>
+      <ProductosHome/>
+      <ContactForm/>
     </section>
   )
 }
