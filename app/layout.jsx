@@ -20,6 +20,7 @@ export const metadata = {
 // Layout Components
 import Nav from '@components/Nav';
 import Footer from '@components/Footer';
+import ContactForm from '@components/ContactForm';
 
 const RootLayout = ({children}) => {
   return (
@@ -29,6 +30,7 @@ const RootLayout = ({children}) => {
           <main>
             {children}
           </main>
+          <ContactForm/>
           <Footer />
         </body>
     </html>
