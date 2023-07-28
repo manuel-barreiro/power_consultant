@@ -33,11 +33,17 @@ import omega5000 from './images/productos/omega5000.png'
 import grgH22 from './images/productos/grgH22.png'
 import totemParaTurnosWeb from './images/productos/totemParaTurnosWeb.jpg'
 
+// Línea Omega
+
+import omegaLogo from './images/productos/lineaOmega/omegaLogo.png'
+
 export { logoPower, hero, quienesSomos, atm, 
     
     aerolineas, anses, bancoChaco, bancoChubut, bancoCiudad, bancoColumbia, bancoIndustrial, bancoPatagonia, bancoTierraDelFuego, bancoProvincia, BBVA, cemic, cencosud, codere, cordial, globalBlue, rapidoArgentino, siderca, telefonica, ternium, univPalermo,
 
 
-    omega5000, grgH22, totemParaTurnosWeb
+    omega5000, grgH22, totemParaTurnosWeb,
+
+    omegaLogo
 
 };
