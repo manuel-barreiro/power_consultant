@@ -132,6 +132,7 @@ const Nav = () => {
                                 <ul className='flex flex-col text-base gap-7'>
                                     <Link
                                         href="/"
+                                        onClick={handleShowMenu}
                                         className='font-medium hover:text-primaryOrange hover:underline underline-offset-8 decoration-primaryOrange cursor-pointer duration-300 nav-link'
                                     >
                                         <motion.li 
@@ -147,7 +148,8 @@ const Nav = () => {
                                         </motion.li>
                                     </Link>
                                     <Link 
-                                        href="/productos" 
+                                        href="/productos"
+                                        onClick={handleShowMenu} 
                                         className='font-medium hover:text-primaryOrange hover:underline underline-offset-8 decoration-primaryOrange cursor-pointer duration-300 nav-link'
                                     >
                                         <motion.li 
@@ -163,7 +165,8 @@ const Nav = () => {
                                         </motion.li>
                                     </Link>
                                     <Link
-                                        href="/servicioTecnico" 
+                                        href="/servicioTecnico"
+                                        onClick={handleShowMenu} 
                                         className='font-medium hover:text-primaryOrange hover:underline underline-offset-8 decoration-primaryOrange cursor-pointer duration-300 nav-link'
                                     >
                                         <motion.li 
@@ -178,7 +181,7 @@ const Nav = () => {
                                             Servicio Técnico
                                         </motion.li>
                                     </Link>
-                                    <Link href="/contacto">
+                                    <Link href="/contacto" onClick={handleShowMenu}>
                                       <motion.li
                                        initial={{ x: 20, opacity: 0 }}
                                        animate={{ x: 0,  opacity: 1 }}

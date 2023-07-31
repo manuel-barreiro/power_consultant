@@ -26,7 +26,7 @@ const Experiencia = () => {
                             <FaHandshakeSimple size={40} className='absolute -top-5 -right-5 text-primaryOrange' />
                             <h2 className='font-bold text-5xl'>
                                 {counterOn &&
-                                    <CountUp start={0} end={170} duration={4} delay={0} preserveValue={true}/>
+                                    <CountUp start={0} end={170} duration={4} delay={0}/>
                                 }
                             </h2>
                             <p className='text-slate-500 border-l-4 border-primaryOrange pl-2 ml-4 mt-2'>Clientes</p>
@@ -37,7 +37,7 @@ const Experiencia = () => {
                             <BsGraphUpArrow size={40} className='absolute -top-8 -left-5 text-primaryOrange' />
                             <h2 className='font-bold text-5xl'>
                                 {counterOn &&
-                                    <CountUp start={0} end={14000} preserveValue={true} separator='.' duration={4} delay={0}/>
+                                    <CountUp start={0} end={14000} separator='.' duration={4} delay={0}/>
                                 }
                             </h2>
                             <p className='text-slate-500 border-l-4 border-primaryOrange pl-2 ml-4 mt-2'>Equipos instalados</p>
@@ -47,7 +47,7 @@ const Experiencia = () => {
                             <MdVerified size={40} className='absolute -bottom-5 -right-5 text-primaryOrange' />
                             <h2 className='font-bold text-5xl'>
                                 {counterOn &&
-                                    <CountUp start={0} end={22} preserveValue={true} duration={4} delay={0}/>
+                                    <CountUp start={0} end={22} duration={4} delay={0}/>
                                 }
                             </h2>
                             <p className='text-slate-500 border-l-4 border-primaryOrange pl-2 ml-4 mt-2'>Años de experiencia</p>
