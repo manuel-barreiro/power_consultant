@@ -29,7 +29,7 @@ const Productos = () => {
                     </div>
                 </div>
 
-                <div className="max-w-[200px] max-h-[300px] bg-gradient-to-tr from-neutral-900 to-neutral-500 rounded-3xl shadow-[4.0px_8.0px_8.0px_rgba(0,0,0,0.38)] hover:scale-105 duration-300 ease-in-out">
+                <div className="max-w-[200px] max-h-[300px] bg-gradient-to-tr from-neutral-900 to-neutral-500 rounded-3xl shadow-[4.0px_8.0px_8.0px_rgba(0,0,0,0.38)] hover:scale-105 duration-300 ease-in-out animate-fade-down animate-once">
                     <Link href='productos/lineaGRG'>
                         <Image className="rounded-t-3xl" src={grgH22} alt="lineaGRG" />
                     </Link>
