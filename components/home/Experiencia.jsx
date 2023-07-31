@@ -22,32 +22,32 @@ const Experiencia = () => {
                 
                     <div className="flex flex-col w-full md:w-[50%]">
 
-                        <div className="p-6 relative rounded shadow-[rgba(13,_38,_76,_0.19)_0px_9px_20px] w-[60%] self-end -mb-5 z-30 bg-gradient-to-tr from-slate-50 to-gray-100 hover:scale-105 ease-in-out duration-300 h-full">
+                        <div className="p-6 relative rounded shadow-[rgba(13,_38,_76,_0.19)_0px_9px_20px] w-[60%] self-end -mb-5 z-30 bg-gradient-to-tr from-slate-50 to-gray-100 hover:scale-105 ease-in-out duration-300">
                             <FaHandshakeSimple size={40} className='absolute -top-5 -right-5 text-primaryOrange' />
                             <h2 className='font-bold text-5xl'>
                                 {counterOn &&
-                                    <CountUp start={0} end={170} duration={4} delay={0}/>
+                                    <CountUp start={0} end={170} duration={4} delay={0} preserveValue={true}/>
                                 }
                             </h2>
                             <p className='text-slate-500 border-l-4 border-primaryOrange pl-2 ml-4 mt-2'>Clientes</p>
                         </div>
 
 
-                        <div className="p-6 relative rounded shadow-[rgba(13,_38,_76,_0.19)_0px_9px_20px] w-[70%] bg-gradient-to-tr from-slate-50 to-gray-100 hover:scale-105 ease-in-out duration-300 h-full">
+                        <div className="p-6 relative rounded shadow-[rgba(13,_38,_76,_0.19)_0px_9px_20px] w-[70%] bg-gradient-to-tr from-slate-50 to-gray-100 hover:scale-105 ease-in-out duration-300">
                             <BsGraphUpArrow size={40} className='absolute -top-8 -left-5 text-primaryOrange' />
                             <h2 className='font-bold text-5xl'>
                                 {counterOn &&
-                                    <CountUp start={0} end={14000} separator='.' duration={4} delay={0}/>
+                                    <CountUp start={0} end={14000} preserveValue={true} separator='.' duration={4} delay={0}/>
                                 }
                             </h2>
                             <p className='text-slate-500 border-l-4 border-primaryOrange pl-2 ml-4 mt-2'>Equipos instalados</p>
                         </div>
 
-                        <div className="p-6 relative rounded shadow-[rgba(13,_38,_76,_0.19)_0px_9px_20px] w-[60%] self-end -mt-5 z-30 bg-gradient-to-tr from-slate-50 to-gray-100 hover:scale-105 ease-in-out duration-300 h-full">
+                        <div className="p-6 relative rounded shadow-[rgba(13,_38,_76,_0.19)_0px_9px_20px] w-[60%] self-end -mt-5 z-30 bg-gradient-to-tr from-slate-50 to-gray-100 hover:scale-105 ease-in-out duration-300">
                             <MdVerified size={40} className='absolute -bottom-5 -right-5 text-primaryOrange' />
                             <h2 className='font-bold text-5xl'>
                                 {counterOn &&
-                                    <CountUp start={0} end={22} duration={4} delay={0}/>
+                                    <CountUp start={0} end={22} preserveValue={true} duration={4} delay={0}/>
                                 }
                             </h2>
                             <p className='text-slate-500 border-l-4 border-primaryOrange pl-2 ml-4 mt-2'>Años de experiencia</p>
