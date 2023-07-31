@@ -1,18 +1,9 @@
 import ProductGrid from "@components/productos/ProductGrid"
-import Link from "next/link"
 import Image from "next/image"
-import { grgLogo, omega5000 } from "@public"
+import { grgLogo } from '@public'
+import { productosSalud } from "./productosSalud.js"
 
 const page = () => {
-
-  const products = [
-    {
-      key: 1,
-      name: 'Salud 1',
-      img: 'omega5000',
-      urlName: 'omega5000'
-    }
-  ]
 
   return (
     <section className="font-montserrat w-full h-auto">
@@ -30,7 +21,7 @@ const page = () => {
 
             </div>
 
-            <ProductGrid products={products} />
+            <ProductGrid products={productosSalud} />
 
 
          
