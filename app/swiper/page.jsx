@@ -1,4 +1,4 @@
-import ProductSwiper from "@components/productos/ProductSwiper"
+import ProductSwiper from "@components/productos/ProductSwiper/ProductSwiper"
 
 const page = () => {
   return (
