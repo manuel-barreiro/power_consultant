@@ -48,7 +48,7 @@ const ProductSwiper = () => {
   return (
     <div className='carousel font-montserrat container px-8 md:px-32 pt-10 pb-24 mx-auto'>
         <div>
-            <div className='carousel-content md:pr-12'>
+            <div className='carousel-content'>
                 <span className='text-gray-500'>DESCUBRÍ LA INNOVACIÓN</span>
                 <h1 className='font-bold bg-gradient-to-tr from-neutral-900 to-neutral-500 bg-clip-text text-transparent'>Llevá tu negocio al siguiente nivel.</h1>
                 <hr />
