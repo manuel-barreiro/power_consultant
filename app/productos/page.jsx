@@ -1,14 +1,9 @@
-'use client';
+import ProductSwiper from "@components/productos/ProductSwiper/ProductSwiper"
 
-import Image from "next/image"
-import Link from "next/link"
-import { motion } from 'framer-motion'
-import ProductSwiper from "@components/productos/ProductSwiper/ProductSwiper";
-
-const Productos = () => {
+const page = () => {
   return (
     <ProductSwiper />
   )
 }
 
-export default Productos
+export default page
