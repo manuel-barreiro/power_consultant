@@ -7,9 +7,7 @@ import ProductSwiper from "@components/productos/ProductSwiper/ProductSwiper";
 
 const Productos = () => {
   return (
-    <section>
-        <ProductSwiper />
-    </section>
+    <ProductSwiper />
   )
 }
 
