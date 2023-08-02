@@ -97,13 +97,11 @@ const ProductSwiper = () => {
         >
             {
                 slider.map(data => (
-                    <SwiperSlide key={data.title} className="myswiper-slider" style={{ backgroundImage: `url(${data.imgUrl})` }}>
-                        <Link href={''}>
-                            <div>
-                                <h2 className={data.largo ? 'text-lg font-bold text-white mb-4' : 'text-xl font-bold text-white mb-1' }>{data.title}</h2> 
-                                <span className="w-8 h-8 text-lg bg-primaryOrange rounded-full inline-flex items-center justify-center hover:text-textGreen cursor-pointer hover:-translate-y-1 transition-all duration-300"><FiArrowUp/></span>
-                            </div>
-                        </Link>
+                    <SwiperSlide key={data.title} className="myswiper-slider" style={{ backgroundImage: `url(${data.imgUrl})`}}>
+                        <div>
+                            <h2 className={data.largo ? 'text-lg font-bold text-white mb-4' : 'text-xl font-bold text-white mb-1' }>{data.title}</h2> 
+                            <span className="w-8 h-8 text-lg bg-primaryOrange rounded-full inline-flex items-center justify-center hover:text-textGreen cursor-pointer hover:-translate-y-1 transition-all duration-300"><FiArrowUp/></span>
+                        </div>
                     </SwiperSlide>
                 ))
             }
