@@ -1,9 +1,8 @@
 'use client';
 
-import Image from 'next/image';
 import Link from 'next/link';
 
-import { omega5000 } from '@public';
+import { FiArrowUp } from 'react-icons/fi'
 
 import { Swiper, SwiperSlide } from 'swiper/react'
 import { Pagination, EffectCoverflow, Autoplay } from 'swiper'
@@ -31,12 +30,13 @@ const slider = [
         imgUrl: "/images/productSwiper/turnos.jpg"
       },
       {
-        title: "Recaudación Cool Pay",
+        title: "Cool Pay",
         imgUrl: "/images/productSwiper/coolPay.jpg"
       },
       {
         title: "Reconocimiento Facial",
-        imgUrl: "/images/productSwiper/facialRecog.jpg"
+        imgUrl: "/images/productSwiper/facialRecog.jpg",
+        largo: true
       },
       {
         title: "Control Fronterizo",
@@ -48,11 +48,11 @@ const ProductSwiper = () => {
   return (
     <div className='carousel font-montserrat container px-8 md:px-32 pt-10 pb-24 mx-auto'>
         <div>
-            <div className='carousel-content'>
+            <div className='carousel-content md:pr-12'>
                 <span className='text-gray-500'>DESCUBRÍ LA INNOVACIÓN</span>
                 <h1 className='font-bold bg-gradient-to-tr from-neutral-900 to-neutral-500 bg-clip-text text-transparent'>Llevá tu negocio al siguiente nivel.</h1>
                 <hr />
-                <p>Te presentamos una selección de nuestras innovadoras líneas de productos, diseñadas para <span className='font-bold'>potenciar</span> tu empresa con la última tecnología.</p>
+                <p className='text-justify'>Te presentamos una selección de nuestras innovadoras líneas de productos, diseñadas para <span className='font-bold'>potenciar</span> tu empresa con la última tecnología.</p>
                 <button className='px-4 py-2 mt-6 rounded-md md:text-lg text-white bg-primaryOrange border border-primaryOrange hover:bg-white hover:text-primaryOrange duration-300  hover:scale-105 ease-in-out'>
                     Contactanos
                 </button>
@@ -76,7 +76,7 @@ const ProductSwiper = () => {
         pagination={{clickable: true}}
 
         autoplay={{
-            delay: 5000,
+            delay: 3000,
             disableOnInteraction: false
         }}
         breakpoints={{
@@ -98,10 +98,12 @@ const ProductSwiper = () => {
             {
                 slider.map(data => (
                     <SwiperSlide key={data.title} className="myswiper-slider" style={{ backgroundImage: `url(${data.imgUrl})` }}>
-                        <div>
-                            <h2>{data.title}</h2> 
-                            <button className='px-2 py-1 rounded-md text-white text-xs bg-gradient-to-tr from-neutral-900 to-neutral-500 w-32 text-center'>Explorá</button>
-                        </div>
+                        <Link href={''}>
+                            <div>
+                                <h2 className={data.largo ? 'text-lg font-bold text-white mb-4' : 'text-xl font-bold text-white mb-1' }>{data.title}</h2> 
+                                <span className="w-8 h-8 text-lg bg-primaryOrange rounded-full inline-flex items-center justify-center hover:text-textGreen cursor-pointer hover:-translate-y-1 transition-all duration-300"><FiArrowUp/></span>
+                            </div>
+                        </Link>
                     </SwiperSlide>
                 ))
             }
