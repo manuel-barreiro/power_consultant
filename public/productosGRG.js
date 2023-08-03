@@ -1,40 +1,102 @@
-import { omega5000, grgH22, totemParaTurnosWeb } from '@public'
+import { grgH22, grgH34, videoTeller } from '@public'
 
 export const productosGRG = [
     {
         "id": 1,
-        "name": "GRG 1",
-        "img": omega5000,
+        "name": "GRG H22",
+        "img": grgH22,
         "cat": "lineaGRG",
-        "urlName": "GRG1"
+        "urlName": "GRGH22",
+        "car": true,
+        "tdn": false,
+        "parrafo": true,
+        "caracteristicas": [
+            'Gabinete',
+            'metálico',
+            'terminación pintura termoplástica',
+            'Puerta para acceso frontal y trasera de servicio con cerradura de seguridad.',
+            'Cpu, intel o superior 2 gb ddrii o superior',
+            'Monitor touch o multi touch de 15” o 19”',
+            'Aceptador de billetes',
+            'Escáner de cheques',
+            'Compatible con windows y linux',
+            'Lector smart de tarjeta',
+            'Lector de tarjetas magneticas',
+            'Lector de cod. De barra y/o manchas 2d, 1d',
+            'Lector de huella dactilar',
+            'Camara web',
+            'Teclado',
+            'Conectividad wi fi o 3g',
+            'Multiples procesadores.',
+            'Aceptador de billetes c/ escrow',
+            'Escaner de cheques c/ escrow',
+            'Caja de seguridad'
+          ]
     },
     {
         "id": 2,
-        "name": "GRG 2",
-        "img": omega5000,
+        "name": "GRG H34",
+        "img": grgH34,
         "cat": "lineaGRG",
-        "urlName": "GRG2"
+        "urlName": "GRGH34",
+        "car": true,
+        "tdn": false,
+        "parrafo": true,
+        "caracteristicas": [
+            'Gabinete',
+            'metálico',
+            'terminación pintura termoplástica',
+            'Puerta para acceso frontal y trasera de servicio con cerradura de seguridad.',
+            'Cpu, intel o superior 2 gb ddrii o superior',
+            'Monitor touch o multi touch de 15” o 19”',
+            'Aceptador de billetes',
+            'Escáner de cheques',
+            'Compatible con windows y linux',
+            'Lector smart de tarjeta',
+            'Lector de tarjetas magneticas',
+            'Lector de cod. De barra y/o manchas 2d, 1d',
+            'Lector de huella dactilar',
+            'Camara web',
+            'Teclado',
+            'Conectividad wi fi o 3g',
+            'Multiples procesadores.',
+            'Aceptador de billetes c/ escrow',
+            'Escaner de cheques c/ escrow',
+            'Caja de seguridad'
+          ]
     },
     {
         "id": 3,
-        "name": "GRG 3",
-        "img": omega5000,
+        "name": "GRG Video Teller",
+        "img": videoTeller,
         "cat": "lineaGRG",
-        "urlName": "GRG3"
+        "urlName": "GRGVideoTeller",
+        "car": true,
+        "tdn": false,
+        "parrafo": true,
+        "caracteristicas": [
+            'Gabinete',
+            'metálico',
+            'terminación pintura termoplástica',
+            'Puerta para acceso frontal y trasera de servicio con cerradura de seguridad.',
+            'Cpu, intel o superior 2 gb ddrii o superior',
+            'Monitor touch o multi touch de 15” o 19”',
+            'Aceptador de billetes',
+            'Escáner de cheques',
+            'Compatible con windows y linux',
+            'Lector smart de tarjeta',
+            'Lector de tarjetas magneticas',
+            'Lector de cod. De barra y/o manchas 2d, 1d',
+            'Lector de huella dactilar',
+            'Camara web',
+            'Teclado',
+            'Conectividad wi fi o 3g',
+            'Multiples procesadores.',
+            'Aceptador de billetes c/ escrow',
+            'Escaner de cheques c/ escrow',
+            'Caja de seguridad'
+          ]
     },
-    {
-        "id": 4,
-        "name": "GRG 4",
-        "img": omega5000,
-        "cat": "lineaGRG",
-        "urlName": "GRG4"
-    },
-    {
-        "id": 5,
-        "name": "GRG 5",
-        "img": omega5000,
-        "cat": "lineaGRG",
-        "urlName": "GRG5"
-    }
+    
 
 ]

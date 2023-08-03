@@ -15,11 +15,11 @@ const ProductosHome = () => {
     const slider = [
         {
             title: "Línea Omega",
-            imgUrl: "/images/productos/omega5000.png"
+            imgUrl: "/images/productos/lineaOmega/omega5000.png"
           },
           {
             title: "Cajeros Express",
-            imgUrl: "/images/productos/grgH22.png"
+            imgUrl: "/images/productos/lineaGRG/grgH22.png"
           },
           {
             title: "Servicio Técnico",

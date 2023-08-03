@@ -35,13 +35,29 @@ import grgLogo from './images/productos/lineaGRG/grgLogo.png'
 // Productos
 
 // Línea Omega
-import omega5000 from './images/productos/omega5000.png'
+import omega5000 from './images/productos/lineaOmega/omega5000.png'
+import omega42 from './images/productos/lineaOmega/omega42.png'
+import omega47 from './images/productos/lineaOmega/omega47.png'
+import omega50 from './images/productos/lineaOmega/omega50.png'
+import omega500 from './images/productos/lineaOmega/omega500.png'
+import omega600 from './images/productos/lineaOmega/omega600.png'
+import omega1000 from './images/productos/lineaOmega/omega1000.png'
+import omega1800 from './images/productos/lineaOmega/omega1800.png'
+import omega3600 from './images/productos/lineaOmega/omega3600.png'
 
-// Línea Omega
-import grgH22 from './images/productos/grgH22.png'
 
-// Línea Omega
-import totemParaTurnosWeb from './images/productos/totemParaTurnosWeb.jpg'
+// Línea GRG
+import grgH22 from './images/productos/lineaGRG/grgH22.png'
+import grgH34 from './images/productos/lineaGRG/grgH34.png'
+import videoTeller from './images/productos/lineaGRG/videoTeller.png'
+
+// Línea Salud
+import totemParaTurnosWeb from './images/productos/lineaSalud/totemParaTurnosWeb.jpg'
+import arcoMulti from './images/productos/lineaSalud/arcoMulti.jpg'
+import camaraTermica from './images/productos/lineaSalud/camaraTermica.jpg'
+import ozono from './images/productos/lineaSalud/ozono.jpg'
+import terminalAcceso from './images/productos/lineaSalud/terminalAcceso.jpg'
+import termoInfra from './images/productos/lineaSalud/termoInfra.png'
 
 
 
@@ -57,14 +73,14 @@ export {
     omegaLogo, grgLogo,
 
     //Línea Omega
-    omega5000, 
+    omega5000, omega42, omega47, omega50, omega500, omega600, omega1000, omega1800, omega3600,
     
     //Línea GRG
-    grgH22, 
+    grgH22, grgH34, videoTeller,
     
     //Línea Salud
-    totemParaTurnosWeb,
-
+    totemParaTurnosWeb, arcoMulti , camaraTermica , ozono , terminalAcceso , termoInfra
+ 
 
     
 
