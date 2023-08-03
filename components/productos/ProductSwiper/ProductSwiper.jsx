@@ -1,16 +1,10 @@
 'use client';
 
-import Image from 'next/image';
-import Link from 'next/link';
-
-import { omega5000 } from '@public';
-
 import { Swiper, SwiperSlide } from 'swiper/react'
 import { Pagination, EffectCoverflow, Autoplay } from 'swiper'
 
 import 'swiper/swiper-bundle.min.css'
 import 'swiper/swiper.min.css'
-
 import './ProductSwiper.css'
 
 const slider = [
