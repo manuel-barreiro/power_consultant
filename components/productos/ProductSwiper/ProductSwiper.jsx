@@ -9,38 +9,41 @@ import 'swiper/swiper-bundle.min.css'
 import 'swiper/swiper.min.css'
 import './ProductSwiper.css'
 
-const slider = [
-    {
-        title: "Línea Omega",
-        imgUrl: "/images/productos/omega5000.png"
-      },
-      {
-        title: "Cajeros Express",
-        imgUrl: "/images/productos/grgH22.png"
-      },
-      {
-        title: "Servicio Técnico",
-        imgUrl: "/images/productSwiper/servTecnico.jpg"
-      },
-      {
-        title: "Turnos",
-        imgUrl: "/images/productSwiper/turnos.jpg"
-      },
-      {
-        title: "Cool Pay",
-        imgUrl: "/images/productSwiper/coolPay.jpg"
-      },
-      {
-        title: "Reconocimiento Facial",
-        imgUrl: "/images/productSwiper/facialRecog.jpg"
-      },
-      {
-        title: "Control Fronterizo",
-        imgUrl: "/images/productSwiper/controlFronterizo.jpg"
-      },
-]
 
 const ProductSwiper = () => {
+    
+    const slider = [
+        {
+            title: "Línea Omega",
+            imgUrl: "/images/productos/omega5000.png"
+          },
+          {
+            title: "Cajeros Express",
+            imgUrl: "/images/productos/grgH22.png"
+          },
+          {
+            title: "Servicio Técnico",
+            imgUrl: "/images/productSwiper/servTecnico.jpg"
+          },
+          {
+            title: "Turnos",
+            imgUrl: "/images/productSwiper/turnos.jpg"
+          },
+          {
+            title: "Cool Pay",
+            imgUrl: "/images/productSwiper/coolPay.jpg"
+          },
+          {
+            title: "Reconocimiento Facial",
+            imgUrl: "/images/productSwiper/facialRecog.jpg"
+          },
+          {
+            title: "Control Fronterizo",
+            imgUrl: "/images/productSwiper/controlFronterizo.jpg"
+          },
+    ]
+
+
   return (
     <div className='font-montserrat container px-8 md:px-32 pt-10 pb-24 mx-auto'>
         

@@ -1,3 +1,5 @@
+'use client';
+
 import ProductSwiper from "@components/productos/ProductSwiper/ProductSwiper"
 
 const page = () => {
