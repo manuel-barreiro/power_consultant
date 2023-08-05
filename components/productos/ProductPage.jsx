@@ -25,7 +25,11 @@ const ProductPage = ({ linea, img, name, car, tdn, parrafo, caracteristicas, tip
         <div className="container px-5 pt-10 pb-32 mx-auto">
           <div className="w-4/5 mx-auto">
               <h2 className="text-sm title-font text-gray-500 tracking-widest">{linea}</h2>
-              <h1 className="font-bold text-4xl bg-gradient-to-tr from-neutral-900 to-neutral-500 bg-clip-text text-transparent mb-4">{name}</h1>
+              {name.length > 19 ? 
+                  <h1 className="font-bold text-3xl bg-gradient-to-tr from-neutral-900 to-neutral-500 bg-clip-text text-transparent mb-4">{name}</h1>
+                  :
+                  <h1 className="font-bold text-4xl bg-gradient-to-tr from-neutral-900 to-neutral-500 bg-clip-text text-transparent mb-4">{name}</h1>
+              }
           </div>
           <div className="w-4/5 h-full mx-auto flex flex-col md:flex-row gap-6 justify-between items-start">
             <div className='lg:basis-2/5'>
@@ -47,13 +51,39 @@ const ProductPage = ({ linea, img, name, car, tdn, parrafo, caracteristicas, tip
                     TIPO DE NEGOCIO
                 </div>}
               </div>
-              {charac && caracteristicas.map((item) => (
-                <p key={item} className="leading-relaxed mb-1 text-sm flex gap-1 items-center"><IoArrowRedoCircleSharp className='w-8 text-primaryOrange'/>{item}</p>
-              ))}
 
-              {typeOfBss && tipoDeNegocio.map((item) => (
-                <p key={item} className="leading-relaxed mb-1 text-sm flex gap-1 items-center"><IoArrowRedoCircleSharp className='w-8 text-primaryOrange'/>{item}</p>
-              ))}
+                {!parrafo && 
+                  <ul className='mt-6 font-medium'>
+                    {charac && caracteristicas.map((item) => (
+                      <li className='flex gap-2 items-center mb-2'>
+                        <span>
+                          <IoArrowRedoCircleSharp className='w-8 text-primaryOrange'/>
+                        </span>
+                        {item}
+                      </li>
+                    ))}
+                  </ul>
+                }
+                
+                {parrafo && 
+                  <div className='flex flex-col gap-4 items-start text-justify text-sm font-medium'>
+                    {caracteristicas.map((item) => (
+                      <p key={item.length}>{item}</p>
+                    ))}
+                  </div>
+
+                }
+
+                <ul className='font-medium'>
+                  {typeOfBss && tipoDeNegocio.map((item) => (
+                    <li className='flex gap-2 items-center mb-2'>
+                      <span>
+                        <IoArrowRedoCircleSharp className='w-8 text-primaryOrange'/>
+                      </span>
+                      {item}
+                    </li>
+                  ))}
+                </ul>
 
             </div>
           </div>

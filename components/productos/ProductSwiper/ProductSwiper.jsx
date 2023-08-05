@@ -52,7 +52,7 @@ const ProductSwiper = () => {
           {
             title: "Salud",
             imgUrl: "/images/productSwiper/salud.jpg",
-            lineaUrl: "/productos/salud"
+            lineaUrl: "/productos/lineaSalud"
           }
     ]
 

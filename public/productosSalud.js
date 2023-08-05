@@ -9,29 +9,16 @@ export const productosSalud = [
         "urlName": "termometroInfrarrojo",
         "car": true,
         "tdn": false,
-        "parrafo": true,
+        "parrafo": false,
         "caracteristicas": [
-            'Gabinete',
-            'metálico',
-            'terminación pintura termoplástica',
-            'Puerta para acceso frontal y trasera de servicio con cerradura de seguridad.',
-            'Cpu, intel o superior 2 gb ddrii o superior',
-            'Monitor touch o multi touch de 15” o 19”',
-            'Aceptador de billetes',
-            'Escáner de cheques',
-            'Compatible con windows y linux',
-            'Lector smart de tarjeta',
-            'Lector de tarjetas magneticas',
-            'Lector de cod. De barra y/o manchas 2d, 1d',
-            'Lector de huella dactilar',
-            'Camara web',
-            'Teclado',
-            'Conectividad wi fi o 3g',
-            'Multiples procesadores.',
-            'Aceptador de billetes c/ escrow',
-            'Escaner de cheques c/ escrow',
-            'Caja de seguridad'
-          ]
+            "Sensor confiable diseñado en Alemania.",
+            "Posee una alta precisión y sensibilidad",
+            "Alarma por temperatura elevada.",
+            "Opciones de escala de medición (°C/ °F)",
+            "Almacenamiento de las 10 últimas lecturas.",
+            "Posee 3 tipos diferentes de colores para usarlo en la pantalla para mejor lectura.",
+            "Se toma la lectura de temperatura entre 5-8 cm de la frente del paciente."
+            ]
     },
     {
         "id": 2,
@@ -41,28 +28,14 @@ export const productosSalud = [
         "urlName": "arcoMultifuncion",
         "car": true,
         "tdn": false,
-        "parrafo": true,
+        "parrafo": false,
         "caracteristicas": [
-            'Gabinete',
-            'metálico',
-            'terminación pintura termoplástica',
-            'Puerta para acceso frontal y trasera de servicio con cerradura de seguridad.',
-            'Cpu, intel o superior 2 gb ddrii o superior',
-            'Monitor touch o multi touch de 15” o 19”',
-            'Aceptador de billetes',
-            'Escáner de cheques',
-            'Compatible con windows y linux',
-            'Lector smart de tarjeta',
-            'Lector de tarjetas magneticas',
-            'Lector de cod. De barra y/o manchas 2d, 1d',
-            'Lector de huella dactilar',
-            'Camara web',
-            'Teclado',
-            'Conectividad wi fi o 3g',
-            'Multiples procesadores.',
-            'Aceptador de billetes c/ escrow',
-            'Escaner de cheques c/ escrow',
-            'Caja de seguridad'
+            
+            "Área de disminución de carga viral de la parte inferior del cuerpo",
+            "Dispenser electrónico de alcohol de gel para manos.",
+            "Posee sensor de medición de temperatura corporal por proximidad y alarma lumínica para detección de temperatura fuera de rango.",
+            "Es de fácil instalación",
+            "Recomendado para accesos masivos."
           ]
     },
     {
@@ -75,26 +48,8 @@ export const productosSalud = [
         "tdn": false,
         "parrafo": true,
         "caracteristicas": [
-            'Gabinete',
-            'metálico',
-            'terminación pintura termoplástica',
-            'Puerta para acceso frontal y trasera de servicio con cerradura de seguridad.',
-            'Cpu, intel o superior 2 gb ddrii o superior',
-            'Monitor touch o multi touch de 15” o 19”',
-            'Aceptador de billetes',
-            'Escáner de cheques',
-            'Compatible con windows y linux',
-            'Lector smart de tarjeta',
-            'Lector de tarjetas magneticas',
-            'Lector de cod. De barra y/o manchas 2d, 1d',
-            'Lector de huella dactilar',
-            'Camara web',
-            'Teclado',
-            'Conectividad wi fi o 3g',
-            'Multiples procesadores.',
-            'Aceptador de billetes c/ escrow',
-            'Escaner de cheques c/ escrow',
-            'Caja de seguridad'
+            "Es un servicio de limpieza que garantiza los ambientes desinfectados para tu lugar de trabajo eliminando el 99% de los virus. El Ozono destruye numerosos virus, bacterias y hongos, es muy eficaz para la familia del coronavirus.",
+            "Este, penetra en la membrana celular, disminuyendo la carga vírica y evitando su propagación. El tratamiento requiere ser llevado a cabo por manos expertas para asegurar el beneficio y la seguridad con efectividad."
           ]
     },
     {
@@ -105,28 +60,12 @@ export const productosSalud = [
         "urlName": "terminalDeAcceso",
         "car": true,
         "tdn": false,
-        "parrafo": true,
+        "parrafo": false,
         "caracteristicas": [
-            'Gabinete',
-            'metálico',
-            'terminación pintura termoplástica',
-            'Puerta para acceso frontal y trasera de servicio con cerradura de seguridad.',
-            'Cpu, intel o superior 2 gb ddrii o superior',
-            'Monitor touch o multi touch de 15” o 19”',
-            'Aceptador de billetes',
-            'Escáner de cheques',
-            'Compatible con windows y linux',
-            'Lector smart de tarjeta',
-            'Lector de tarjetas magneticas',
-            'Lector de cod. De barra y/o manchas 2d, 1d',
-            'Lector de huella dactilar',
-            'Camara web',
-            'Teclado',
-            'Conectividad wi fi o 3g',
-            'Multiples procesadores.',
-            'Aceptador de billetes c/ escrow',
-            'Escaner de cheques c/ escrow',
-            'Caja de seguridad'
+            "Este equipo permite el reconocimiento facial para control de acceso con medición de temperatura.", 
+            "Reconoce el uso de tapabocas y registra hasta 50.000 rostros.", 
+            "Monitoreo remoto para mayor control.",
+            "Ideales para empresas"
           ]
     },
     {
@@ -139,26 +78,8 @@ export const productosSalud = [
         "tdn": false,
         "parrafo": true,
         "caracteristicas": [
-            'Gabinete',
-            'metálico',
-            'terminación pintura termoplástica',
-            'Puerta para acceso frontal y trasera de servicio con cerradura de seguridad.',
-            'Cpu, intel o superior 2 gb ddrii o superior',
-            'Monitor touch o multi touch de 15” o 19”',
-            'Aceptador de billetes',
-            'Escáner de cheques',
-            'Compatible con windows y linux',
-            'Lector smart de tarjeta',
-            'Lector de tarjetas magneticas',
-            'Lector de cod. De barra y/o manchas 2d, 1d',
-            'Lector de huella dactilar',
-            'Camara web',
-            'Teclado',
-            'Conectividad wi fi o 3g',
-            'Multiples procesadores.',
-            'Aceptador de billetes c/ escrow',
-            'Escaner de cheques c/ escrow',
-            'Caja de seguridad'
+            "Ante la nueva realidad, ofrecemos una manera de volver a atender al cliente, segura, fácil, rápida y eficaz. Con TURNOS WEB",
+            "Este software tiene como objetivo evitar conglomeraciones, tiempos de espera, contacto social, brindar la mayor seguridad y protección a clientes y personal , a fin de volver a atender."
           ]
     },
     {
@@ -171,26 +92,11 @@ export const productosSalud = [
         "tdn": false,
         "parrafo": true,
         "caracteristicas": [
-            'Gabinete',
-            'metálico',
-            'terminación pintura termoplástica',
-            'Puerta para acceso frontal y trasera de servicio con cerradura de seguridad.',
-            'Cpu, intel o superior 2 gb ddrii o superior',
-            'Monitor touch o multi touch de 15” o 19”',
-            'Aceptador de billetes',
-            'Escáner de cheques',
-            'Compatible con windows y linux',
-            'Lector smart de tarjeta',
-            'Lector de tarjetas magneticas',
-            'Lector de cod. De barra y/o manchas 2d, 1d',
-            'Lector de huella dactilar',
-            'Camara web',
-            'Teclado',
-            'Conectividad wi fi o 3g',
-            'Multiples procesadores.',
-            'Aceptador de billetes c/ escrow',
-            'Escaner de cheques c/ escrow',
-            'Caja de seguridad'
+            "Sabemos lo importante que es hoy controlar el nivel de temperatura de las personas que ingresan a un edificio.",
+
+            "La cámara térmica es un producto estratégico con una resolución de 1080p, es compatible con aplicaciones multiterminales, lo que permite a los clientes ver las áreas afectadas en cualquier momento en cualquier lugar.",
+
+            "Es un sistema de detección de doble luz totalmente integrado para humanos que detecta la temperatura corporal."
           ]
     },
 

@@ -1,6 +1,7 @@
 'use client';
 
 import { FiArrowUp } from 'react-icons/fi'
+import Link from 'next/link';
 
 import { Swiper, SwiperSlide } from 'swiper/react'
 import { Pagination, EffectCoverflow, Autoplay } from 'swiper'
@@ -15,32 +16,44 @@ const ProductosHome = () => {
     const slider = [
         {
             title: "Línea Omega",
-            imgUrl: "/images/productos/lineaOmega/omega5000.png"
+            imgUrl: "/images/productos/lineaOmega/omega5000.png",
+            lineaUrl: "/productos/lineaOmega"
           },
           {
             title: "Cajeros Express",
-            imgUrl: "/images/productos/lineaGRG/grgH22.png"
+            imgUrl: "/images/productos/lineaGRG/grgH22.png",
+            lineaUrl: "/productos/lineaGRG"
           },
           {
             title: "Servicio Técnico",
-            imgUrl: "/images/productSwiper/servTecnico.jpg"
+            imgUrl: "/images/productSwiper/servTecnico.jpg",
+            lineaUrl: "/servicioTecnico"
           },
           {
             title: "Turnos",
-            imgUrl: "/images/productSwiper/turnos.jpg"
+            imgUrl: "/images/productSwiper/turnos.jpg",
+            lineaUrl: "/productos/turnos"
           },
           {
             title: "Cool Pay",
-            imgUrl: "/images/productSwiper/coolPay.jpg"
+            imgUrl: "/images/productSwiper/coolPay.jpg",
+            lineaUrl: "/productos/coolPay"
           },
           {
             title: "Reconocimiento Facial",
-            imgUrl: "/images/productSwiper/facialRecog.jpg"
+            imgUrl: "/images/productSwiper/facialRecog.jpg",
+            lineaUrl: "/productos/reconocimientoFacial"
           },
           {
             title: "Control Fronterizo",
-            imgUrl: "/images/productSwiper/controlFronterizo.jpg"
+            imgUrl: "/images/productSwiper/controlFronterizo.jpg",
+            lineaUrl: "/productos/controlFronterizo"
           },
+          {
+            title: "Salud",
+            imgUrl: "/images/productSwiper/salud.jpg",
+            lineaUrl: "/productos/lineaSalud"
+          }
     ]
 
 
@@ -100,10 +113,12 @@ const ProductosHome = () => {
                     {
                         slider.map(data => (
                             <SwiperSlide key={data.title} className="myswiper-slider" style={{ backgroundImage: `url(${data.imgUrl})` }}>
-                                <div>
-                                    <span className="w-10 h-10 text-2xl bg-primaryOrange rounded-full inline-flex items-center justify-center hover:text-textGreen cursor-pointer hover:-translate-y-1 transition-all duration-300 mb-4"><FiArrowUp/></span>
-                                    <h2 className='text-3xl font-bold text-white mb-2 text-center'>{data.title}</h2> 
-                                </div>
+                                <Link href={data.lineaUrl}>
+                                    <div>
+                                        <span className="w-10 h-10 text-2xl bg-primaryOrange rounded-full inline-flex items-center justify-center hover:text-textGreen cursor-pointer hover:-translate-y-1 transition-all duration-300 mb-4"><FiArrowUp/></span>
+                                        <h2 className='text-3xl font-bold text-white mb-2 text-center'>{data.title}</h2> 
+                                    </div>
+                                </Link>
                             </SwiperSlide>
                         ))
                     }
