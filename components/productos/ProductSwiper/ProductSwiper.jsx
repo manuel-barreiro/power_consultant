@@ -32,25 +32,25 @@ const ProductSwiper = () => {
           {
             title: "Flujo de Personas",
             imgUrl: "/images/productSwiper/turnos.jpg",
-            lineaUrl: "/productos/turnos"
+            lineaUrl: "/productos/flujoDePersonas"
           },
           {
             title: "Recaudación Cool Pay",
             imgUrl: "/images/productSwiper/coolPay.jpg",
             isPdf: true,
-            lineaUrl: "/productPdf/COOLPAY.pdf"
+            lineaUrl: "/productos/coolPay"
           },
           {
             title: "Reconocimiento Facial",
             imgUrl: "/images/productSwiper/facialRecog.jpg",
             isPdf: true,
-            lineaUrl: "/productPdf/OMEGA47ONBOARDING.pdf"
+            lineaUrl: "/productos/reconocimientoFacial"
           },
           {
             title: "Control Fronterizo",
             imgUrl: "/images/productSwiper/controlFronterizo.jpg",
             isPdf: true,
-            lineaUrl: "/productPdf/OMEGA47ABC.pdf"
+            lineaUrl: "/productos/controlFronterizo"
           },
           {
             title: "Salud",
@@ -72,7 +72,7 @@ const ProductSwiper = () => {
                         <span className='text-gray-500'>INNOVACIÓN A TU SERVICIO</span>
                         <h1 className='font-bold bg-gradient-to-tr from-neutral-900 to-neutral-500 bg-clip-text text-transparent text-3xl mb-3 mt-2'>Llevá tu negocio al siguiente nivel.</h1>
                         <hr className='bg-primaryOrange w-28 h-1' />
-                        <p className='text-justify mt-3'>Te presentamos una selección de nuestras innovadoras líneas de productos, diseñadas para <span className='font-bold'>potenciar</span> tu empresa con la última tecnología.</p>
+                        <p className='text-justify mt-3'>Te presentamos una selección de nuestras innovadoras líneas de productos y soluciones, diseñadas para <span className='font-bold'>potenciar</span> tu empresa con la última tecnología.</p>
                         <button className='px-4 py-2 mt-5 rounded-md md:text-lg text-white bg-primaryOrange border border-primaryOrange hover:bg-white hover:text-primaryOrange duration-300  hover:scale-105 ease-in-out'>
                             Contactanos
                         </button>
@@ -118,7 +118,7 @@ const ProductSwiper = () => {
                     {
                         slider.map(data => (
                             <SwiperSlide key={data.title} className="myswiper-slider" style={{ backgroundImage: `url(${data.imgUrl})` }}>
-                                <Link href={data.lineaUrl} target={data.isPdf ? "_blank" : "_self"}>
+                                <Link href={data.lineaUrl}>
                                     <div>
                                         <span className="w-10 h-10 text-2xl bg-primaryOrange rounded-full inline-flex items-center justify-center hover:text-textGreen cursor-pointer hover:-translate-y-1 transition-all duration-300 mb-4"><FiArrowUp/></span>
                                         <h2 className='text-3xl font-bold text-white mb-2 text-center'>{data.title}</h2> 

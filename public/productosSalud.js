@@ -1,6 +1,25 @@
-import { totemParaTurnosWeb, arcoMulti , camaraTermica , ozono , terminalAcceso , termoInfra } from '@public'
+import { totemParaTurnosWeb, arcoMulti , camaraTermica , ozono , terminalAcceso , termoInfra, cabina } from '@public'
 
 export const productosSalud = [
+    {
+        "id": 0,
+        "name": "Cabina de Atención",
+        "img": cabina,
+        "cat": "lineaSalud",
+        "urlName": "cabinaDeAtencion",
+        "car": true,
+        "tdn": false,
+        "parrafo": true,
+        "caracteristicas": [
+            "En los últimos años hemos implementado soluciones con sucursales autónomas para que las institucines puedan realizar operaciones remotas sin la necesidad de tener personas físicas.",
+            "Debido al éxito que tiene el proyecto, ya que este método de atención en las instituciones favorece en forma exponencial la capilaridad del sistema y la accesibilidad al público -y en este caso pacientes-, decidimos llevar este concepto de atención, al sistema de atención médica primaria.",
+            "De aquí surge la CABINA POWER (Cabina de Atención Primaria Diagnostica), este tipo de solución es óptima para distribuir en todo lugar en donde la aparatología médica básica es escasa, al igual que la presencia de profesionales médicos, o que el acceso físico de los mismos sea dificultoso por problemas geográficos, climáticos, de seguridad o de infraestructura, (Montañas, ríos, falta de rutas, consultorios, etc…).",
+            "La misma pude operar las 24 horas los 7 días de la semana. Las CABINA POWER se focalizan en el ámbito de la salud, donde estas se convierten es un instrumento muy eficaz tanto para los efectores o financiadores, públicos como privados o sindicales.",
+            "Almacenamiento de las 10 últimas lecturas.",
+            " El principio de operatividad de la CABINA POWER se basa en la combinación de la autoatención con aparatología básica y la video consulta médica. ",
+            ],
+        "isPdf" :  "https://drive.google.com/file/d/11DqhZtEh5TlYB2IeqT5o0gHQDbexzyw3/view?usp=drive_link",
+    },
     {
         "id": 1,
         "name": "Termómetro Infrarrojo",

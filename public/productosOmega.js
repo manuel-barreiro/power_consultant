@@ -20,7 +20,10 @@ export const productosOmega = [
         
         "Permite una rápida y completa atención al público, ampliando fácilmente y a bajo costo la accesibilidad y capilaridad del negocio a  los  clientes de la entidad. Sencilla , rápida y en forma segura se realizan operaciones de depósito, cobro, etc."
         
-        ]
+        ],
+        "isPdf" :  "https://drive.google.com/file/d/1vd6XhZhYvg2A6J_3NOP1q0qm5n3_lSfV/view?usp=drive_link",
+        "isVideo" : "https://drive.google.com/file/d/1M1NlmlkM0GRNNQTdppKlsXT_sFBpj30f/view?usp=drive_link"
+
       },  
 
     {
@@ -64,7 +67,10 @@ export const productosOmega = [
             'Manejo de efectivos en casinos (TICO)',
             'Impresión de cheques tinta ferromagnética',
             'Impresión A4 de resúmenes de cuenta, tarjetas, etc'
-          ]
+          ],
+          "isPdf" :  "https://drive.google.com/file/d/14TYdoK5n4kFFg_L1JQb3DWHrVxIyd62m/view?usp=drive_link",
+          "isVideo" : "https://drive.google.com/file/d/1xhYwPfCFR7O3y67UnW2dFv9OFn_hDSB2/view?usp=drive_link"
+  
     },
     {
         "id": 2,

@@ -59,6 +59,13 @@ import camaraTermica from './images/productos/lineaSalud/camaraTermica.jpg'
 import ozono from './images/productos/lineaSalud/ozono.jpg'
 import terminalAcceso from './images/productos/lineaSalud/terminalAcceso.jpg'
 import termoInfra from './images/productos/lineaSalud/termoInfra.png'
+import cabina from './images/productos/lineaSalud/cabina.png'
+
+// Soluciones
+
+import coolPay from './images/productos/soluciones/coolPay.png'
+import omega47abc from './images/productos/soluciones/omega47abc.png'
+import omega47identidad from './images/productos/soluciones/omega47identidad.png'
 
 
 
@@ -80,7 +87,10 @@ export {
     grgH22, grgH34, videoTeller,
     
     //Línea Salud
-    totemParaTurnosWeb, arcoMulti , camaraTermica , ozono , terminalAcceso , termoInfra,
+    totemParaTurnosWeb, arcoMulti , camaraTermica , ozono , terminalAcceso , termoInfra, cabina,
+
+    //Soluciones
+    coolPay, omega47abc, omega47identidad,
  
 
     
