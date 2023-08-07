@@ -3,8 +3,9 @@
 import { useState } from 'react'
 import Image from 'next/image';
 import {IoArrowRedoCircleSharp} from 'react-icons/io5'
+import Link from 'next/link';
 
-const ProductPage = ({ linea, img, name, car, tdn, parrafo, caracteristicas, tipoDeNegocio }) => {
+const ProductPage = ({ linea, img, name, car, tdn, parrafo, caracteristicas, tipoDeNegocio, isPdf }) => {
 
   const [charac, setCharac] = useState(true)
   const [typeOfBss, setTypeOfBss] = useState(false)
@@ -34,7 +35,11 @@ const ProductPage = ({ linea, img, name, car, tdn, parrafo, caracteristicas, tip
           <div className="w-4/5 h-full mx-auto flex flex-col md:flex-row gap-6 justify-between items-start">
             <div className='lg:basis-2/5'>
               <Image alt="ecommerce" src={img} />
-              <button className="px-4 py-2 mt-6 w-full text-center rounded-md md:text-sm text-white bg-gradient-to-tr from-neutral-900 to-neutral-500 hover:scale-105 ease-in-out duration-300">PDF con Especificaciones</button>
+              {isPdf &&
+                <Link href={isPdf} target='_blank'>
+                  <button className="px-4 py-2 mt-6 w-full text-center rounded-md md:text-sm text-white bg-gradient-to-tr from-neutral-900 to-neutral-500 hover:scale-105 ease-in-out duration-300">PDF con Especificaciones</button>
+                </Link>
+                }
             </div>
             <div className="lg:basis-3/5 lg:-mt-16">
               <div className="flex mb-4">

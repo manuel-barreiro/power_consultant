@@ -44,6 +44,7 @@ import omega600 from './images/productos/lineaOmega/omega600.png'
 import omega1000 from './images/productos/lineaOmega/omega1000.png'
 import omega1800 from './images/productos/lineaOmega/omega1800.png'
 import omega3600 from './images/productos/lineaOmega/omega3600.png'
+import omega5000M from './images/productos/lineaOmega/omega5000M.png'
 
 
 // Línea GRG
@@ -73,13 +74,13 @@ export {
     omegaLogo, grgLogo,
 
     //Línea Omega
-    omega5000, omega42, omega47, omega50, omega500, omega600, omega1000, omega1800, omega3600,
+    omega5000, omega42, omega47, omega50, omega500, omega600, omega1000, omega1800, omega3600, omega5000M,
     
     //Línea GRG
     grgH22, grgH34, videoTeller,
     
     //Línea Salud
-    totemParaTurnosWeb, arcoMulti , camaraTermica , ozono , terminalAcceso , termoInfra
+    totemParaTurnosWeb, arcoMulti , camaraTermica , ozono , terminalAcceso , termoInfra,
  
 
     

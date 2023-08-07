@@ -1,6 +1,28 @@
-import { omega5000, omega42, omega47, omega50, omega500, omega600, omega1000, omega1800, omega3600 } from '@public'
+import { omega5000, omega42, omega47, omega50, omega500, omega600, omega1000, omega1800, omega3600, omega5000M } from '@public'
 
 export const productosOmega = [
+    {
+      "id": 0,
+      "name": "Omega 5000M",
+      "img": omega5000M,
+      "cat": "lineaOmega",
+      "urlName": "omega5000M",
+      "car": true,
+      "tdn": false,
+      "parrafo": true,
+      "isPdf": "/productPdf/OMEGA5000M.pdf",
+      "caracteristicas": [
+        "El Ω-5000M es la solución idea para el manejo de efectivo, administra con eficiencia la validación, conteo y depósito de numerario para empresas recaudadoras, transportadoras de caudales, entes bancarios, empresas de servicios y de cobranza, etc. con capacidad de aceptación de a fajos hasta 500 billetes,  una velocidad de lectura de 720 billetes / min y una capacidad de deposito hasta 30.000 billetes. Es una soluciones optima para el deposito a granel autogestionado. Opera Integrado a Sistemas Centrales o en forma Stand Alone.",
+
+        "Cuenta con tecnología de autenticación de billetes profesional y completa, que admite IR, UV, Detección Magnética, Sensor de Espesor y CIS; Tecnología OCR.",
+        
+        "Posee Lector Laser, lector de Tarjeta Magnética y Chip, Cámara de Video HD , Teclado encriptado 3DES, Impresora termina, caja de valores con normas ANSI-UL 291 y sistema de UPS.",
+        
+        "Permite una rápida y completa atención al público, ampliando fácilmente y a bajo costo la accesibilidad y capilaridad del negocio a  los  clientes de la entidad. Sencilla , rápida y en forma segura se realizan operaciones de depósito, cobro, etc."
+        
+        ]
+      },  
+
     {
         "id": 1,
         "name": "Omega 5000",

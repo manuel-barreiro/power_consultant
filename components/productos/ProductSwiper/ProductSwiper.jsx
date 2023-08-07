@@ -15,7 +15,7 @@ const ProductSwiper = () => {
     
     const slider = [
         {
-            title: "Línea Omega",
+            title: "ΩMEGA by Power",
             imgUrl: "/images/productos/lineaOmega/omega5000.png",
             lineaUrl: "/productos/lineaOmega"
           },
@@ -30,24 +30,27 @@ const ProductSwiper = () => {
             lineaUrl: "/servicioTecnico"
           },
           {
-            title: "Turnos",
+            title: "Flujo de Personas",
             imgUrl: "/images/productSwiper/turnos.jpg",
             lineaUrl: "/productos/turnos"
           },
           {
-            title: "Cool Pay",
+            title: "Recaudación Cool Pay",
             imgUrl: "/images/productSwiper/coolPay.jpg",
-            lineaUrl: "/productos/coolPay"
+            isPdf: true,
+            lineaUrl: "/productPdf/COOLPAY.pdf"
           },
           {
             title: "Reconocimiento Facial",
             imgUrl: "/images/productSwiper/facialRecog.jpg",
-            lineaUrl: "/productos/reconocimientoFacial"
+            isPdf: true,
+            lineaUrl: "/productPdf/OMEGA47ONBOARDING.pdf"
           },
           {
             title: "Control Fronterizo",
             imgUrl: "/images/productSwiper/controlFronterizo.jpg",
-            lineaUrl: "/productos/controlFronterizo"
+            isPdf: true,
+            lineaUrl: "/productPdf/OMEGA47ABC.pdf"
           },
           {
             title: "Salud",
@@ -115,7 +118,7 @@ const ProductSwiper = () => {
                     {
                         slider.map(data => (
                             <SwiperSlide key={data.title} className="myswiper-slider" style={{ backgroundImage: `url(${data.imgUrl})` }}>
-                                <Link href={data.lineaUrl}>
+                                <Link href={data.lineaUrl} target={data.isPdf ? "_blank" : "_self"}>
                                     <div>
                                         <span className="w-10 h-10 text-2xl bg-primaryOrange rounded-full inline-flex items-center justify-center hover:text-textGreen cursor-pointer hover:-translate-y-1 transition-all duration-300 mb-4"><FiArrowUp/></span>
                                         <h2 className='text-3xl font-bold text-white mb-2 text-center'>{data.title}</h2> 
