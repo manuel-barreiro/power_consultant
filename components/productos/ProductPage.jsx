@@ -25,7 +25,7 @@ const ProductPage = ({ linea, img, name, car, tdn, parrafo, caracteristicas, tip
     <section className="font-montserrat h-auto text-gray-600 overflow-hidden">
         <div className="container px-5 pt-10 pb-32 mx-auto">
           <div className="w-4/5 mx-auto">
-              <h2 className="text-sm title-font text-gray-500 tracking-widest">{linea}</h2>
+              <h2 className="text-xs title-font text-gray-500 tracking-widest">{linea}</h2>
               {name.length > 19 ? 
                   <h1 className="font-bold text-3xl bg-gradient-to-tr from-neutral-900 to-neutral-500 bg-clip-text text-transparent mb-4">{name}</h1>
                   :
