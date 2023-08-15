@@ -11,10 +11,10 @@ const Home = () => {
     <section className="font-montserrat">
       <Hero />
       <QuienesSomos />
+      <ProductosHome/>
       <NuestroDiferencial />
       <Experiencia />
       <Clientes />
-      <ProductosHome/>
     </section>
   )
 }

@@ -2,6 +2,7 @@
 
 import CountUp from 'react-countup';
 import ScrollTrigger from 'react-scroll-trigger'
+import Link from 'next/link';
 import { FaHandshakeSimple } from 'react-icons/fa6';
 import { BsGraphUpArrow } from 'react-icons//bs';
 import { MdVerified } from 'react-icons/md';
@@ -59,7 +60,9 @@ const Experiencia = () => {
                         <h1 className="text-2xl md:text-4xl text-primaryOrange font-bold">El <span className='font-extrabold'>compromiso</span> y la <span className='font-extrabold'>calidad</span> como banderas.</h1>
                         <p className="text-justify">Lideramos la industria, acompañando siempre a nuestros clientes y poniendo su satisfacción como máxima prioridad.</p>
                         <p>Contamos con certificación <span className='font-semibold'>ISO:9001</span>, cumpliendo los más altos estándares de calidad en el mercado.</p>
-                        <button className='px-4 py-2 rounded-md text-white bg-primaryOrange border border-primaryOrange hover:bg-white hover:text-primaryOrange duration-300 '>Contactanos</button>
+                        <Link href="/contacto">
+                            <button className='px-4 py-2 rounded-md text-white bg-primaryOrange border border-primaryOrange hover:bg-white hover:text-primaryOrange duration-300 '>Contactanos</button>
+                        </Link>
                     </div>
 
                 </div>

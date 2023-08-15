@@ -6,8 +6,7 @@ import Image from "next/image"
 import Link from "next/link"
 import { motion } from 'framer-motion'
 import { MdOutlineClose } from 'react-icons/md'
-import { SlSocialTwitter, SlSocialLinkedin } from "react-icons/sl";
-import { AiOutlineWhatsApp } from "react-icons/ai";
+import { FaLinkedinIn, FaFacebookF, FaWhatsapp, FaInstagram } from 'react-icons/fa6'
 
 const Nav = () => {
 
@@ -202,19 +201,24 @@ const Nav = () => {
                                   transition= {{ duration: 0.1, delay: 0.6 }}
                                   className="flex gap-6"
                                 >
-                                    <a href="https://www.linkedin.com/in/manuel-barreiro/" target="_blank">
-                                        <span className="w-10 h-10 text-xl bg-black text-white rounded-full inline-flex items-center justify-center hover:text-primaryOrange cursor-pointer hover:-translate-y-2 transition-all duration-300">
-                                            <SlSocialLinkedin />
+                                   <a href="https://www.linkedin.com/company/power-consultant/" target="_blank">
+                                       <span className="w-8 h-8 text-md text-white bg-black rounded-full inline-flex items-center justify-center hover:text-textGreen cursor-pointer hover:-translate-y-2 transition-all duration-300">
+                                        <FaLinkedinIn />
+                                      </span>
+                                    </a>
+                                    <a href="https://www.facebook.com/PowerConsultant" target="_blank">
+                                        <span className="w-8 h-8 text-md text-white bg-black rounded-full inline-flex items-center justify-center hover:text-textGreen cursor-pointer hover:-translate-y-2 transition-all duration-300">
+                                            <FaFacebookF />
                                         </span>
                                     </a>
-                                    <a href="https://twitter.com/ing_Barreiro" target="_blank">
-                                        <span className="w-10 h-10 text-xl bg-black text-white rounded-full inline-flex items-center justify-center hover:text-primaryOrange cursor-pointer hover:-translate-y-2 transition-all duration-300">
-                                            <SlSocialTwitter />
+                                    <a href="https://instagram.com/powerconsultantsa?igshid=MzRlODBiNWFlZA==" target="_blank">
+                                        <span className="w-8 h-8 text-md text-white bg-black rounded-full inline-flex items-center justify-center hover:text-textGreen cursor-pointer hover:-translate-y-2 transition-all duration-300">
+                                            <FaInstagram />
                                         </span>
                                     </a>
-                                    <a href="https://wa.me/+5491166726968" target="_blank">
-                                        <span className="w-10 h-10 text-xl bg-black text-white rounded-full inline-flex items-center justify-center hover:text-primaryOrange cursor-pointer hover:-translate-y-2 transition-all duration-300">
-                                            <AiOutlineWhatsApp />
+                                    <a href="https://api.whatsapp.com/send/?phone=%2B5491144940763&text&type=phone_number&app_absent=0" target="_blank">
+                                        <span className="w-8 h-8 text-md text-white bg-black rounded-full inline-flex items-center justify-center hover:text-textGreen cursor-pointer hover:-translate-y-2 transition-all duration-300">
+                                            <FaWhatsapp />
                                         </span>
                                     </a>
                                 </motion.div>

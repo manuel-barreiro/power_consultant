@@ -51,6 +51,7 @@ import omega5000M from './images/productos/lineaOmega/omega5000M.png'
 import grgH22 from './images/productos/lineaGRG/grgH22.png'
 import grgH34 from './images/productos/lineaGRG/grgH34.png'
 import videoTeller from './images/productos/lineaGRG/videoTeller.png'
+import cajeroExpress from './images/productos/lineaGRG/cajeroExpress.jpeg'
 
 // Línea Salud
 import totemParaTurnosWeb from './images/productos/lineaSalud/totemParaTurnosWeb.jpg'
@@ -60,6 +61,7 @@ import ozono from './images/productos/lineaSalud/ozono.jpg'
 import terminalAcceso from './images/productos/lineaSalud/terminalAcceso.jpg'
 import termoInfra from './images/productos/lineaSalud/termoInfra.png'
 import cabina from './images/productos/lineaSalud/cabina.png'
+import clinicas from './images/productos/lineaSalud/clinicas.png'
 
 // Soluciones
 
@@ -67,6 +69,10 @@ import coolPay from './images/productos/soluciones/coolPay.png'
 import omega47abc from './images/productos/soluciones/omega47abc.png'
 import omega47identidad from './images/productos/soluciones/omega47identidad.png'
 
+// Serv Tecnico
+
+import estructura from './images/servTecnico/estructura.jpg'
+import argentina from './images/servTecnico/argentina.jpg'
 
 
 // Export
@@ -84,13 +90,16 @@ export {
     omega5000, omega42, omega47, omega50, omega500, omega600, omega1000, omega1800, omega3600, omega5000M,
     
     //Línea GRG
-    grgH22, grgH34, videoTeller,
+    grgH22, grgH34, videoTeller, cajeroExpress,
     
     //Línea Salud
-    totemParaTurnosWeb, arcoMulti , camaraTermica , ozono , terminalAcceso , termoInfra, cabina,
+    totemParaTurnosWeb, arcoMulti , camaraTermica , ozono , terminalAcceso , termoInfra, cabina, clinicas,
 
     //Soluciones
     coolPay, omega47abc, omega47identidad,
+
+    //Serv tecnico
+    estructura, argentina
  
 
     

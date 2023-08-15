@@ -15,14 +15,16 @@ const ProductSwiper = () => {
     
     const slider = [
         {
-            title: "ΩMEGA by Power",
+            title: "ΩMEGA",
+            subtitle: "by Power",
             imgUrl: "/images/productos/lineaOmega/omega5000.png",
             lineaUrl: "/productos/lineaOmega"
           },
           {
-            title: "Cajeros Express",
+            title: "Cajeros",
+            subtitle: "Cajero Express",
             imgUrl: "/images/productos/lineaGRG/grgH22.png",
-            lineaUrl: "/productos/lineaGRG"
+            lineaUrl: "/productos/Cajeros"
           },
           {
             title: "Servicio Técnico",
@@ -31,25 +33,33 @@ const ProductSwiper = () => {
           },
           {
             title: "Flujo de Personas",
+            subtitle: "Turnos",
+            isPdf: true,
             imgUrl: "/images/productSwiper/turnos.jpg",
-            lineaUrl: "/productos/flujoDePersonas"
+            lineaUrl: "https://drive.google.com/file/d/1nhn8qiKG7ScDzRjP7FW-rKAes_XY6gR4/view?usp=drive_link"
           },
           {
-            title: "Recaudación Cool Pay",
+            title: "Sistema de Recaudación",
+            subtitle: "Cool Pay",
             imgUrl: "/images/productSwiper/coolPay.jpg",
-            isPdf: true,
             lineaUrl: "/productos/coolPay"
           },
           {
             title: "Reconocimiento Facial",
+            subtitle: "Matching de Rostros",
             imgUrl: "/images/productSwiper/facialRecog.jpg",
             isPdf: true,
+            lineaUrl: "https://drive.google.com/file/d/1FCHX6KrmZC7kT1uitjuO-cPLE34dkpqL/view?usp=drive_link"
+          },
+          {
+            title: "Onboarding",
+            subtitle: "Validación de Identidad",
+            imgUrl: "/images/productSwiper/identidad.png",
             lineaUrl: "/productos/reconocimientoFacial"
           },
           {
             title: "Control Fronterizo",
             imgUrl: "/images/productSwiper/controlFronterizo.jpg",
-            isPdf: true,
             lineaUrl: "/productos/controlFronterizo"
           },
           {
@@ -118,10 +128,11 @@ const ProductSwiper = () => {
                     {
                         slider.map(data => (
                             <SwiperSlide key={data.title} className="myswiper-slider" style={{ backgroundImage: `url(${data.imgUrl})` }}>
-                                <Link href={data.lineaUrl}>
+                                <Link href={data.lineaUrl} target={data.isPdf ? "_blank" : "_self"}>
                                     <div>
                                         <span className="w-10 h-10 text-2xl bg-primaryOrange rounded-full inline-flex items-center justify-center hover:text-textGreen cursor-pointer hover:-translate-y-1 transition-all duration-300 mb-4"><FiArrowUp/></span>
-                                        <h2 className='text-3xl font-bold text-white mb-2 text-center'>{data.title}</h2> 
+                                        <h2 className='text-3xl font-bold text-white mb-2 text-center'>{data.title}</h2>
+                                        {data.subtitle && <h4 className='text-xl font-bold text-white mb-2 text-center'>{data.subtitle}</h4> }
                                     </div>
                                 </Link>
                             </SwiperSlide>

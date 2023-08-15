@@ -19,8 +19,8 @@ export const metadata = {
 
 // Layout Components
 import Nav from '@components/Nav';
+import WhatsappButton from '@components/WhatsappButton';
 import Footer from '@components/Footer';
-import ContactForm from '@components/ContactForm';
 
 const RootLayout = ({children}) => {
   return (
@@ -29,8 +29,8 @@ const RootLayout = ({children}) => {
           <Nav />
           <main>
             {children}
+            <WhatsappButton/>
           </main>
-          <ContactForm/>
           <Footer />
         </body>
     </html>

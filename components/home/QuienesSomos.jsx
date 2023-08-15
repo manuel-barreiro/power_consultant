@@ -14,7 +14,7 @@ const QuienesSomos = () => {
   })
 
   return (
-    <section id="quienesSomos" className="h-auto lg:h-[80vh] my-40">
+    <section id="quienesSomos" className="h-auto lg:h-[80vh] mb-20 mt-40">
         <div className="w-full h-full flex justify-center items-center container px-8 md:px-32 mx-auto">
             <div className="w-full flex flex-col gap-0 justify-between lg:flex-row">
                 <Image src={quienesSomos} />

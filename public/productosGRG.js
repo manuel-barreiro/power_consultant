@@ -1,6 +1,76 @@
-import { grgH22, grgH34, videoTeller } from '@public'
+import { grgH22, grgH34, videoTeller, cajeroExpress, omega5000 } from '@public'
 
 export const productosGRG = [
+    {
+        "id": 25,
+        "name": "Omega 5000",
+        "img": omega5000,
+        "cat": "lineaOmega",
+        "urlName": "omega5000",
+        "car": true,
+        "tdn":true,
+        "parrafo": false,
+        "caracteristicas": [
+            'Gabinete metálico',
+            'Terminación pintura termoplástica',
+            'Puerta para acceso frontal y trasera de servicio con cerradura de seguridad.',
+            'Cpu, intel o superior 2 gb ddrii o superior',
+            'Monitor touch o multi touch de 15” o 19”',
+            'Aceptador de billetes',
+            'Escáner de cheques',
+            'Compatible con windows y linux',
+            'Lector smart de tarjeta',
+            'Lector de tarjetas magneticas',
+            'Lector de cod. De barra y/o manchas 2d, 1d',
+            'Lector de huella dactilar',
+            'Camara web',
+            'Teclado',
+            'Conectividad wi fi o 3g',
+            'Multiples procesadores.',
+            'Aceptador de billetes c/ escrow',
+            'Escaner de cheques c/ escrow',
+            'Caja de seguridad'
+          ],
+        "tipoDeNegocio": [
+            'Venta de divisas (Cambio)',
+            'Venta y Dispensación de Tarjetas ( CHIP, Crédito etc)',
+            'Depósito de Efectivo',
+            'Depósito de cheques',
+            'Dispensación de billetes',
+            'Cobro de boletas (telefónica, luz gas, etc)',
+            'Recarga de monederos electrónicos',
+            'Manejo de efectivos en casinos (TICO)',
+            'Impresión de cheques tinta ferromagnética',
+            'Impresión A4 de resúmenes de cuenta, tarjetas, etc'
+          ],
+          "isPdf" :  "https://drive.google.com/file/d/14TYdoK5n4kFFg_L1JQb3DWHrVxIyd62m/view?usp=drive_link",
+          "isVideo" : "https://drive.google.com/file/d/1xhYwPfCFR7O3y67UnW2dFv9OFn_hDSB2/view?usp=drive_link"
+  
+    },
+    {
+        "id": 0,
+        "name": "Cajero Express",
+        "img": cajeroExpress,
+        "cat": "lineaGRG",
+        "urlName": "cajeroExpress",
+        "car": true,
+        "tdn": false,
+        "parrafo": true,
+        "caracteristicas": [
+            "Hoy hay en Argentina alrededor de 14.000 cajeros bancarios. Hay una falta de 20.000 cajeros en todo el país Esta resolución trae un beneficio mutuo, para el que adquiere el cajero y para sus clientes.", "Nuevo servicio para clientes, permite un aumento de transito en el local Comisiones mensuales por cantidad de extracciones Genera ahorros en el movimiento diario del efectivo.",
+            "¿QUÉ OPERACIONES PUEDO REALIZAR EN UN CAJERO EXPRESS?",
+            "► Extracción de efectivo con tarjetas de débito",
+            "► Adelanto de efectivo con tarjetas de crédito",
+            "► Consulta de saldo",
+            "¿QUIÉNES PUEDEN UTILIZAR CAJERO EXPRESS?",
+            "► Pueden operar todas las tarjetas de las redes Link, Banelco, Visa Plus, Mastecard y American Express.",
+            "¿SE LES COBRA CARGO POR EXTRACCIÓN A LOS CLIENTES DE OTRAS REDES COMO BANELCO O LINK?",
+            "► Las operaciones en Cajero Express no tienen recargos adicionales.",
+            "¿CUÁL ES LA DENOMINACIÓN PERMITIDA DE BILLETES?", 
+            "► La denominación de billetes es configurable por cada casetera que contiene el Cajero"
+          ],
+          "isPdf" :  "https://drive.google.com/file/d/1HwimI0THujybnXYoRAf26h_fuBtXpXuy/view?usp=drive_link"
+    },
     {
         "id": 1,
         "name": "GRG H22",
