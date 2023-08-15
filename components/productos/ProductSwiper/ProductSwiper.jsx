@@ -83,9 +83,11 @@ const ProductSwiper = () => {
                         <h1 className='font-bold bg-gradient-to-tr from-neutral-900 to-neutral-500 bg-clip-text text-transparent text-3xl mb-3 mt-2'>Llevá tu negocio al siguiente nivel.</h1>
                         <hr className='bg-primaryOrange w-28 h-1' />
                         <p className='text-justify mt-3'>Te presentamos una selección de nuestras innovadoras líneas de productos y soluciones, diseñadas para <span className='font-bold'>potenciar</span> tu empresa con la última tecnología.</p>
-                        <button className='px-4 py-2 mt-5 rounded-md md:text-lg text-white bg-primaryOrange border border-primaryOrange hover:bg-white hover:text-primaryOrange duration-300  hover:scale-105 ease-in-out'>
+                        <Link href="/contacto">
+                          <button className='px-4 py-2 mt-5 rounded-md md:text-lg text-white bg-primaryOrange border border-primaryOrange hover:bg-white hover:text-primaryOrange duration-300  hover:scale-105 ease-in-out'>
                             Contactanos
-                        </button>
+                          </button>
+                        </Link>
                     </div>
                 </div>
 
