@@ -23,7 +23,7 @@ const page = ({ params }) => {
   const objetoBuscado = definirLinea().find((item) => item.urlName === params.producto);
 
   return (
-    <ProductPage linea={linea} img={objetoBuscado.img} name={objetoBuscado.name} car={objetoBuscado.car} tdn={objetoBuscado.tdn} parrafo={objetoBuscado.parrafo} caracteristicas={objetoBuscado.caracteristicas} tipoDeNegocio={objetoBuscado.tipoDeNegocio} isPdf={objetoBuscado.isPdf} isVideo={objetoBuscado.isVideo} />
+    <ProductPage key={linea} linea={linea} img={objetoBuscado.img} name={objetoBuscado.name} car={objetoBuscado.car} tdn={objetoBuscado.tdn} parrafo={objetoBuscado.parrafo} caracteristicas={objetoBuscado.caracteristicas} tipoDeNegocio={objetoBuscado.tipoDeNegocio} isPdf={objetoBuscado.isPdf} isVideo={objetoBuscado.isVideo} />
   )
 }
 

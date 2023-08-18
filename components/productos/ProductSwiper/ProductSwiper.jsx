@@ -21,6 +21,11 @@ const ProductSwiper = () => {
             lineaUrl: "/productos/lineaOmega"
           },
           {
+            title: "Control Fronterizo",
+            imgUrl: "/images/productSwiper/controlFronterizo.jpg",
+            lineaUrl: "/productos/controlFronterizo"
+          },
+          {
             title: "Cajeros",
             subtitle: "Cajero Express",
             imgUrl: "/images/productos/lineaGRG/grgH22.png",
@@ -58,11 +63,6 @@ const ProductSwiper = () => {
             lineaUrl: "/productos/reconocimientoFacial"
           },
           {
-            title: "Control Fronterizo",
-            imgUrl: "/images/productSwiper/controlFronterizo.jpg",
-            lineaUrl: "/productos/controlFronterizo"
-          },
-          {
             title: "Salud",
             imgUrl: "/images/productSwiper/salud.jpg",
             lineaUrl: "/productos/lineaSalud"
@@ -80,7 +80,7 @@ const ProductSwiper = () => {
                 <div className='md:basis-1/3'>
                     <div>
                         <span className='text-gray-500'>INNOVACIÓN A TU SERVICIO</span>
-                        <h1 className='font-bold bg-gradient-to-tr from-neutral-900 to-neutral-500 bg-clip-text text-transparent text-3xl mb-3 mt-2'>Llevá tu negocio al siguiente nivel.</h1>
+                        <h1 className='font-bold bg-gradient-to-tr from-neutral-900 to-neutral-500 bg-clip-text text-transparent text-3xl mb-3 mt-2'>Llevá tu negocio al siguiente nivel</h1>
                         <hr className='bg-primaryOrange w-28 h-1' />
                         <p className='text-justify mt-3'>Te presentamos una selección de nuestras innovadoras líneas de productos y soluciones, diseñadas para <span className='font-bold'>potenciar</span> tu empresa con la última tecnología.</p>
                         <Link href="/contacto">

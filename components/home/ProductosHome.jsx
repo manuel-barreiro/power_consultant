@@ -21,6 +21,11 @@ const ProductosHome = () => {
             lineaUrl: "/productos/lineaOmega"
           },
           {
+            title: "Control Fronterizo",
+            imgUrl: "/images/productSwiper/controlFronterizo.jpg",
+            lineaUrl: "/productos/controlFronterizo"
+          },
+          {
             title: "Cajeros",
             subtitle: "Cajero Express",
             imgUrl: "/images/productos/lineaGRG/grgH22.png",
@@ -58,11 +63,6 @@ const ProductosHome = () => {
             lineaUrl: "/productos/reconocimientoFacial"
           },
           {
-            title: "Control Fronterizo",
-            imgUrl: "/images/productSwiper/controlFronterizo.jpg",
-            lineaUrl: "/productos/controlFronterizo"
-          },
-          {
             title: "Salud",
             imgUrl: "/images/productSwiper/salud.jpg",
             lineaUrl: "/productos/lineaSalud"
@@ -80,7 +80,7 @@ const ProductosHome = () => {
                 <div className='md:basis-1/3 max-w-lg'>
                     <div>
                         <span className='text-gray-500'>INNOVACIÓN A TU SERVICIO</span>
-                        <h1 className='font-bold bg-gradient-to-tr from-neutral-900 to-neutral-500 bg-clip-text text-transparent text-3xl mb-3 mt-2'>Potenciá tu negocio con nuestras soluciones.</h1>
+                        <h1 className='font-bold bg-gradient-to-tr from-neutral-900 to-neutral-500 bg-clip-text text-transparent text-3xl mb-3 mt-2'>Potenciá tu negocio con nuestras soluciones</h1>
                         <hr className='bg-primaryOrange w-28 h-1' />
                         
                         
