@@ -10,10 +10,13 @@ const montserrat = Montserrat({
   variable: '--font-montserrat',
 })
 
-
 // Metadata
 export const metadata = {
-    title: 'Power Consultant S.A.',
+    metadataBase: new URL("https://www.powerconsultant.com.ar/"),
+    title: {
+      default: 'Power Consultant S.A.',
+      template: `%s | Power Consultant `
+    },
     description: 'Cajeros Automaticos | Soluciones Tecnológicas'
 }
 

@@ -1,11 +1,15 @@
-'use client'
-
 import ProductSwiper from "@components/productos/ProductSwiper/ProductSwiper"
 
-const page = () => {
+export const metadata = {
+  title: 'Productos',
+  description: 'Innovadoras líneas de productos y soluciones, diseñadas para potenciar tu empresa con la última tecnología.',
+  alternates: {
+    canonical: '/productos'
+  }
+}
+
+export default function page() {
   return (
     <ProductSwiper />
   )
 }
-
-export default page

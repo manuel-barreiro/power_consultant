@@ -1,7 +1,15 @@
 import ProductPage from "@components/productos/ProductPage";
 import { coolPay } from "@public";
 
-const page = () => {
+export const metadata = {
+  title: 'Sistema de Recaudación',
+  description: 'El Sistema Cool Pay integra el hardware y software necesario para lograr la más óptima solución de los sistemas de cobro.", "Es una solución ideal para todo aquel negocio que maneje recaudaciones de cobro en efectivo o electrónico, por ende su uso es escalable a varias industrias y negocios, tales como telefonía, estacionamiento, cines, restaurants, clubes, municipios, y la lista podría continuar.',
+  alternates: {
+    canonical: '/productos/coolPay'
+  }
+}
+
+export default function page() {
 
 
 const objeto = {
@@ -20,5 +28,3 @@ const objeto = {
     <ProductPage linea={objeto.linea} img={objeto.img} name={objeto.name} car={objeto.car} tdn={objeto.tdn} parrafo={objeto.parrafo} caracteristicas={objeto.caracteristicas} isPdf={objeto.isPdf} isVideo={objeto.isVideo} />
   )
 }
-
-export default page

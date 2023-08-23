@@ -60,7 +60,7 @@ const ProductSwiper = () => {
             title: "Onboarding",
             subtitle: "Validación de Identidad",
             imgUrl: "/images/productSwiper/identidad.png",
-            lineaUrl: "/productos/reconocimientoFacial"
+            lineaUrl: "/productos/onboarding"
           },
           {
             title: "Salud",

@@ -3,7 +3,15 @@ import { estructura } from '@public';
 import { FaGears } from "react-icons/fa6";
 import { argentina } from '@public';
 
-function page() {
+export const metadata = {
+    title: 'Servicio Técnico',
+    description: 'Se brinda atención directa a los usuarios, resolviendo la mayor cantidad de solicitudes de servicio en el primer contacto en línea o derivamos a los sectores de soporte necesarios para la solución, realizando un seguimiento detallado de la evolución del incidente. Se dispone de una herramienta de software que permite la gestión integral del servicio.',
+    alternates: {
+        canonical: '/servicioTecnico'
+    }
+  }
+
+export default function page() {
   return (
     <section className='w-full h-auto'>
 
@@ -39,4 +47,3 @@ function page() {
   )
 }
 
-export default page

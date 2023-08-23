@@ -1,11 +1,19 @@
 import ProductPage from "@components/productos/ProductPage";
 import { omega47identidad } from "@public";
 
-const page = () => {
+export const metadata = {
+  title: 'Onboarding',
+  description: 'El proceso de onboarding con validación de identidad y reconocimiento facial combina la verificación de documentación y la identidad de una persona con la tecnología de reconocimiento facial para asegurar que la persona que se registra es quien dice ser.',
+  alternates: {
+    canonical: '/productos/onboarding'
+  }
+}
+
+export default function page() {
 
 
 const objeto = {
-  "linea" : 'Onboarding / Reconocimiento Facial',
+  "linea" : 'Onboarding / Validación de Identidad',
   "img" : omega47identidad,
   "name" : 'Sistema Ω-47-Identidad',
   "tdn" : false,
@@ -16,10 +24,9 @@ const objeto = {
   "isVideo" : "https://drive.google.com/file/d/1PIydIiHzAboi0RTjJy2GGl6q2TtpHScH/view?usp=drive_link"
 }
  
-
  return (
     <ProductPage linea={objeto.linea} img={objeto.img} name={objeto.name} car={objeto.car} tdn={objeto.tdn} parrafo={objeto.parrafo} caracteristicas={objeto.caracteristicas} isPdf={objeto.isPdf} isVideo={objeto.isVideo} />
   )
+
 }
 
-export default page
