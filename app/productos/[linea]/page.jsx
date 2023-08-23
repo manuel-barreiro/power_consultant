@@ -1,12 +1,42 @@
 import ProductGrid from "@components/productos/ProductGrid"
-import Image from "next/image"
-import { grgLogo, omegaLogo } from '@public' //Agregar saludLogo
 import { productosOmega } from "@public/productosOmega"
 import { productosGRG } from "@public/productosGRG"
 import { productosSalud } from "@public/productosSalud"
 import Link from "next/link"
+
+export async function generateMetadata({ params }) {
+
+  const linea = params.linea
+
+    if (linea === 'lineaOmega'){
+      return {
+        title: 'Línea Omega',
+        openGraph: {
+          images: '/images/productos/lineaOmega/omega500.png',
+        },
+      }
+    } 
+    else if (linea === 'Cajeros'){
+      return {
+        title: 'Cajeros',
+        openGraph: {
+          images: '/images/productos/lineaGRG/cajeroExpress.jpeg',
+        },
+      }
+    }
+    else if (linea === 'lineaSalud') {
+      return {
+        title: 'Línea Salud',
+        openGraph: {
+          images: '/images/productos/lineaSalud/cabina.png',
+        },
+      }
+    }
+
+
+}
   
-const page = ({ params }) => {
+export default function page({ params }) {
 
   function definirLinea() {
     if (params.linea === 'lineaOmega'){
@@ -19,20 +49,6 @@ const page = ({ params }) => {
       return productosSalud
     }
   }
-
-  // function definirImagenLinea() {
-  //   if (params.linea === 'lineaOmega'){
-  //     return omegaLogo
-  //   } 
-  //   else if (params.linea === 'lineaGRG'){
-  //     return grgLogo
-  //   }
-  //   else {
-  //     return productosSalud
-  //   }
-  // }
-
-
 
   return (
     <section className="font-montserrat w-full h-auto">
@@ -49,10 +65,6 @@ const page = ({ params }) => {
                   <button className="px-4 py-2 rounded-md md:text-xs text-white bg-gradient-to-tr from-neutral-900 to-neutral-500 hover:scale-105 ease-in-out duration-300">Cotizá</button>
                 </Link>
 
-                {/* <div className="w-40">
-                    <Image src={definirImagenLinea()}></Image>
-                </div> */}
-
             </div>
 
             <ProductGrid products={definirLinea()} />
@@ -63,5 +75,3 @@ const page = ({ params }) => {
     </section>
   )
 }
-
-export default page
