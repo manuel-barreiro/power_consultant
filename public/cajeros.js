@@ -1,10 +1,10 @@
-import { grgH22, grgH34, videoTeller, cajeroExpress, omega5000 } from '@public'
+import { grgH22, grgH34, videoTeller, cajeroExpress, omega5000D } from '@public'
 
 export const cajeros = [
     {
         "id": 25,
         "name": "Omega 5000D",
-        "img": omega5000,
+        "img": omega5000D,
         "cat": "cajeros",
         "urlName": "omega5000D",
         "car": true,
@@ -76,7 +76,7 @@ export const cajeros = [
         "name": "GRG H22",
         "img": grgH22,
         "cat": "cajeros",
-        "urlName": "GRGH22",
+        "urlName": "grgH22",
         "car": true,
         "tdn": false,
         "parrafo": true,
@@ -94,7 +94,7 @@ export const cajeros = [
         "name": "GRG H34",
         "img": grgH34,
         "cat": "cajeros",
-        "urlName": "GRGH34",
+        "urlName": "grgH34",
         "car": true,
         "tdn": false,
         "parrafo": true,
@@ -114,7 +114,7 @@ export const cajeros = [
         "name": "GRG Video Teller",
         "img": videoTeller,
         "cat": "cajeros",
-        "urlName": "GRGVideoTeller",
+        "urlName": "videoTeller",
         "car": true,
         "tdn": false,
         "parrafo": true,

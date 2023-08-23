@@ -4,19 +4,6 @@ import { productosOmega } from "@public/productosOmega"
 import { cajeros } from "@public/cajeros"
 import { productosSalud } from "@public/productosSalud"
 
-import { 
-  //Línea Omega
-  omega5000, omega42, omega47, omega50, omega500, omega600, omega1000, omega1800, omega3600, omega5000M,
-  
-  //Cajeros
-  grgH22, grgH34, videoTeller, cajeroExpress,
-  
-  //Línea Salud
-  totemParaTurnosWeb, arcoMulti , camaraTermica , ozono , terminalAcceso , termoInfra, cabina, clinicas,
-
-  //Soluciones
-  coolPay, omega47abc, omega47identidad} from '@public'
-
 export async function generateMetadata({ params }) {
 
   function definirLinea() {
@@ -37,7 +24,7 @@ export async function generateMetadata({ params }) {
         title: productoBuscado.name,
         description: productoBuscado.caracteristicas,
         openGraph: {
-          images: productoBuscado.img,
+          images: `/images/productos/${productoBuscado.cat}/${productoBuscado.urlName}.png`,
         },
         alternates: {
           canonical: `/productos/${productoBuscado.cat}/${productoBuscado.urlName}`

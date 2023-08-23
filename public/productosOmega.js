@@ -10,7 +10,6 @@ export const productosOmega = [
       "car": true,
       "tdn": false,
       "parrafo": true,
-      "isPdf": "/productPdf/OMEGA5000M.pdf",
       "caracteristicas": [
         "El Ω-5000M es la solución idea para el manejo de efectivo, administra con eficiencia la validación, conteo y depósito de numerario para empresas recaudadoras, transportadoras de caudales, entes bancarios, empresas de servicios y de cobranza, etc. con capacidad de aceptación de a fajos hasta 500 billetes,  una velocidad de lectura de 720 billetes / min y una capacidad de deposito hasta 30.000 billetes. Es una soluciones optima para el deposito a granel autogestionado. Opera Integrado a Sistemas Centrales o en forma Stand Alone.",
 

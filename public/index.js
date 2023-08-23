@@ -48,20 +48,21 @@ import omega5000M from './images/productos/lineaOmega/omega5000M.png'
 
 
 // Cajeros
+import omega5000D from './images/productos/cajeros/omega5000D.png'
 import grgH22 from './images/productos/cajeros/grgH22.png'
 import grgH34 from './images/productos/cajeros/grgH34.png'
 import videoTeller from './images/productos/cajeros/videoTeller.png'
-import cajeroExpress from './images/productos/cajeros/cajeroExpress.jpeg'
+import cajeroExpress from './images/productos/cajeros/cajeroExpress.png'
 
 // Línea Salud
-import totemParaTurnosWeb from './images/productos/lineaSalud/totemParaTurnosWeb.jpg'
-import arcoMulti from './images/productos/lineaSalud/arcoMulti.jpg'
-import camaraTermica from './images/productos/lineaSalud/camaraTermica.jpg'
-import ozono from './images/productos/lineaSalud/ozono.jpg'
-import terminalAcceso from './images/productos/lineaSalud/terminalAcceso.jpg'
-import termoInfra from './images/productos/lineaSalud/termoInfra.png'
-import cabina from './images/productos/lineaSalud/cabina.png'
-import clinicas from './images/productos/lineaSalud/clinicas.png'
+import totemTurnosWeb from './images/productos/lineaSalud/totemTurnosWeb.png'
+import arcoMultifuncion from './images/productos/lineaSalud/arcoMultifuncion.png'
+import camaraTermica from './images/productos/lineaSalud/camaraTermica.png'
+import desinfeccionConOzono from './images/productos/lineaSalud/desinfeccionConOzono.png'
+import terminalDeAcceso from './images/productos/lineaSalud/terminalDeAcceso.png'
+import termometroInfrarrojo from './images/productos/lineaSalud/termometroInfrarrojo.png'
+import cabinaDeAtencion from './images/productos/lineaSalud/cabinaDeAtencion.png'
+import sistemaDeClinicas from './images/productos/lineaSalud/sistemaDeClinicas.png'
 
 // Soluciones
 
@@ -90,10 +91,10 @@ export {
     omega5000, omega42, omega47, omega50, omega500, omega600, omega1000, omega1800, omega3600, omega5000M,
     
     //Cajeros
-    grgH22, grgH34, videoTeller, cajeroExpress,
+    omega5000D, grgH22, grgH34, videoTeller, cajeroExpress,
     
     //Línea Salud
-    totemParaTurnosWeb, arcoMulti , camaraTermica , ozono , terminalAcceso , termoInfra, cabina, clinicas,
+    totemTurnosWeb, arcoMultifuncion , camaraTermica , desinfeccionConOzono , terminalDeAcceso , termometroInfrarrojo, cabinaDeAtencion, sistemaDeClinicas,
 
     //Soluciones
     coolPay, omega47abc, omega47identidad,

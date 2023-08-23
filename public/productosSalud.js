@@ -1,10 +1,10 @@
-import { totemParaTurnosWeb, arcoMulti , camaraTermica , ozono , terminalAcceso , termoInfra, cabina, clinicas } from '@public'
+import { totemTurnosWeb, arcoMultifuncion , camaraTermica , desinfeccionConOzono , terminalDeAcceso , termometroInfrarrojo, cabinaDeAtencion, sistemaDeClinicas } from '@public'
 
 export const productosSalud = [
     {
         "id": 0,
         "name": "Cabina de Atención",
-        "img": cabina,
+        "img": cabinaDeAtencion,
         "cat": "lineaSalud",
         "urlName": "cabinaDeAtencion",
         "car": true,
@@ -24,7 +24,7 @@ export const productosSalud = [
     {
         "id": 25,
         "name": "Sistema de Clínicas",
-        "img": clinicas,
+        "img": sistemaDeClinicas,
         "cat": "lineaSalud",
         "urlName": "sistemaDeClinicas",
         "car": false,
@@ -44,7 +44,7 @@ export const productosSalud = [
     {
         "id": 2,
         "name": "Arco Multifunción",
-        "img": arcoMulti,
+        "img": arcoMultifuncion,
         "cat": "lineaSalud",
         "urlName": "arcoMultifuncion",
         "car": true,
@@ -62,7 +62,7 @@ export const productosSalud = [
     {
         "id": 1,
         "name": "Termómetro Infrarrojo",
-        "img": termoInfra,
+        "img": termometroInfrarrojo,
         "cat": "lineaSalud",
         "urlName": "termometroInfrarrojo",
         "car": true,
@@ -81,7 +81,7 @@ export const productosSalud = [
     {
         "id": 3,
         "name": "Desinfección con Ozono",
-        "img": ozono,
+        "img": desinfeccionConOzono,
         "cat": "lineaSalud",
         "urlName": "desinfeccionConOzono",
         "car": true,
@@ -95,7 +95,7 @@ export const productosSalud = [
     {
         "id": 4,
         "name": "Terminal de Acceso",
-        "img": terminalAcceso,
+        "img": terminalDeAcceso,
         "cat": "lineaSalud",
         "urlName": "terminalDeAcceso",
         "car": true,
@@ -111,7 +111,7 @@ export const productosSalud = [
     {
         "id": 5,
         "name": "Totem Turnos Web",
-        "img": totemParaTurnosWeb,
+        "img": totemTurnosWeb,
         "cat": "lineaSalud",
         "urlName": "totemTurnosWeb",
         "car": true,
