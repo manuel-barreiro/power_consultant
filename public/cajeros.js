@@ -3,10 +3,10 @@ import { grgH22, grgH34, videoTeller, cajeroExpress, omega5000 } from '@public'
 export const cajeros = [
     {
         "id": 25,
-        "name": "Omega 5000",
+        "name": "Omega 5000D",
         "img": omega5000,
-        "cat": "lineaOmega",
-        "urlName": "omega5000",
+        "cat": "cajeros",
+        "urlName": "omega5000D",
         "car": true,
         "tdn":true,
         "parrafo": false,
@@ -43,7 +43,7 @@ export const cajeros = [
             'Impresión de cheques tinta ferromagnética',
             'Impresión A4 de resúmenes de cuenta, tarjetas, etc'
           ],
-          "isPdf" :  "https://drive.google.com/file/d/14TYdoK5n4kFFg_L1JQb3DWHrVxIyd62m/view?usp=drive_link",
+          "isPdf" :  "https://drive.google.com/file/d/1Mq4H2b9bdMqMwzvCNp3-S9ZE4lw3vZA7/view?usp=drive_link",
           "isVideo" : "https://drive.google.com/file/d/1xhYwPfCFR7O3y67UnW2dFv9OFn_hDSB2/view?usp=drive_link"
   
     },
@@ -51,7 +51,7 @@ export const cajeros = [
         "id": 0,
         "name": "Cajero Express",
         "img": cajeroExpress,
-        "cat": "lineaGRG",
+        "cat": "cajeros",
         "urlName": "cajeroExpress",
         "car": true,
         "tdn": false,
@@ -75,7 +75,7 @@ export const cajeros = [
         "id": 1,
         "name": "GRG H22",
         "img": grgH22,
-        "cat": "lineaGRG",
+        "cat": "cajeros",
         "urlName": "GRGH22",
         "car": true,
         "tdn": false,
@@ -93,7 +93,7 @@ export const cajeros = [
         "id": 2,
         "name": "GRG H34",
         "img": grgH34,
-        "cat": "lineaGRG",
+        "cat": "cajeros",
         "urlName": "GRGH34",
         "car": true,
         "tdn": false,
@@ -113,7 +113,7 @@ export const cajeros = [
         "id": 3,
         "name": "GRG Video Teller",
         "img": videoTeller,
-        "cat": "lineaGRG",
+        "cat": "cajeros",
         "urlName": "GRGVideoTeller",
         "car": true,
         "tdn": false,

@@ -29,7 +29,7 @@ const ProductosHome = () => {
         title: "Cajeros",
         subtitle: "Cajero Express",
         imgUrl: "/images/productos/cajeros/grgH22.png",
-        lineaUrl: "/productos/Cajeros"
+        lineaUrl: "/productos/cajeros"
       },
       {
         title: "Servicio Técnico",

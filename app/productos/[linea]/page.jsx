@@ -14,14 +14,21 @@ export async function generateMetadata({ params }) {
         openGraph: {
           images: '/images/productos/lineaOmega/omega5000.png',
         },
+        alternates: {
+          canonical: '/productos/lineaOmega'
+        }
+        
       }
     } 
-    else if (linea === 'Cajeros'){
+    else if (linea === 'cajeros'){
       return {
         title: 'Cajeros',
         openGraph: {
-          images: '/images/productos/lineaGRG/cajeroExpress.jpeg',
+          images: '/images/productos/cajeros/cajeroExpress.jpeg',
         },
+        alternates: {
+          canonical: '/productos/cajeros'
+        }
       }
     }
     else if (linea === 'lineaSalud') {
@@ -30,6 +37,9 @@ export async function generateMetadata({ params }) {
         openGraph: {
           images: '/images/productos/lineaSalud/cabina.png',
         },
+        alternates: {
+          canonical: '/productos/lineaSalud'
+        }
       }
     }
 
@@ -42,8 +52,8 @@ export default function page({ params }) {
     if (params.linea === 'lineaOmega'){
       return productosOmega
     } 
-    else if (params.linea === 'Cajeros'){
-      return productosGRG
+    else if (params.linea === 'cajeros'){
+      return cajeros
     }
     else if (params.linea === 'lineaSalud') {
       return productosSalud
@@ -57,7 +67,7 @@ export default function page({ params }) {
             <div className='w-full rounded-3xl h-auto bg-gradient-to-tr from-orange-400 to-orange-600 flex justify-between px-6 py-3 items-center'>
                 <div>
                     <h3 className='pb-4 font-bold text-xl xs:text-2xl sm:text-3xl bg-gradient-to-tr from-neutral-900 to-neutral-500 bg-clip-text text-transparent'>
-                      {params.linea === 'Cajeros' ? 'Cajeros' : params.linea === 'lineaOmega' ? 'Línea Omega' : params.linea === 'lineaSalud' ? 'Línea Salud' : '404'}</h3>
+                      {params.linea === 'cajeros' ? 'Cajeros' : params.linea === 'lineaOmega' ? 'Línea Omega' : params.linea === 'lineaSalud' ? 'Línea Salud' : '404'}</h3>
                     
                 </div>
                 
