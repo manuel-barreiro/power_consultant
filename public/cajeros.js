@@ -1,6 +1,6 @@
 import { grgH22, grgH34, videoTeller, cajeroExpress, omega5000 } from '@public'
 
-export const productosGRG = [
+export const cajeros = [
     {
         "id": 25,
         "name": "Omega 5000",

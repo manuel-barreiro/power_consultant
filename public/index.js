@@ -30,7 +30,7 @@ import univPalermo from './images/logosClientes/univPalermo.png'
 
 // Logos Líneas
 import omegaLogo from './images/productos/lineaOmega/omegaLogo.png'
-import grgLogo from './images/productos/lineaGRG/grgLogo.png'
+import grgLogo from './images/productos/cajeros/grgLogo.png'
 
 // Productos
 
@@ -47,11 +47,11 @@ import omega3600 from './images/productos/lineaOmega/omega3600.png'
 import omega5000M from './images/productos/lineaOmega/omega5000M.png'
 
 
-// Línea GRG
-import grgH22 from './images/productos/lineaGRG/grgH22.png'
-import grgH34 from './images/productos/lineaGRG/grgH34.png'
-import videoTeller from './images/productos/lineaGRG/videoTeller.png'
-import cajeroExpress from './images/productos/lineaGRG/cajeroExpress.jpeg'
+// Cajeros
+import grgH22 from './images/productos/cajeros/grgH22.png'
+import grgH34 from './images/productos/cajeros/grgH34.png'
+import videoTeller from './images/productos/cajeros/videoTeller.png'
+import cajeroExpress from './images/productos/cajeros/cajeroExpress.jpeg'
 
 // Línea Salud
 import totemParaTurnosWeb from './images/productos/lineaSalud/totemParaTurnosWeb.jpg'
@@ -89,7 +89,7 @@ export {
     //Línea Omega
     omega5000, omega42, omega47, omega50, omega500, omega600, omega1000, omega1800, omega3600, omega5000M,
     
-    //Línea GRG
+    //Cajeros
     grgH22, grgH34, videoTeller, cajeroExpress,
     
     //Línea Salud

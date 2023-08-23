@@ -13,61 +13,61 @@ import '../productos/ProductSwiper/ProductSwiper.css'
 
 const ProductosHome = () => {
     
-    const slider = [
-        {
-            title: "ΩMEGA",
-            subtitle: "by Power",
-            imgUrl: "/images/productos/lineaOmega/omega5000.png",
-            lineaUrl: "/productos/lineaOmega"
-          },
-          {
-            title: "Control Fronterizo",
-            imgUrl: "/images/productSwiper/controlFronterizo.jpg",
-            lineaUrl: "/productos/controlFronterizo"
-          },
-          {
-            title: "Cajeros",
-            subtitle: "Cajero Express",
-            imgUrl: "/images/productos/lineaGRG/grgH22.png",
-            lineaUrl: "/productos/Cajeros"
-          },
-          {
-            title: "Servicio Técnico",
-            imgUrl: "/images/productSwiper/servTecnico.jpg",
-            lineaUrl: "/servicioTecnico"
-          },
-          {
-            title: "Flujo de Personas",
-            subtitle: "Turnos",
-            isPdf: true,
-            imgUrl: "/images/productSwiper/turnos.jpg",
-            lineaUrl: "https://drive.google.com/file/d/1nhn8qiKG7ScDzRjP7FW-rKAes_XY6gR4/view?usp=drive_link"
-          },
-          {
-            title: "Sistema de Recaudación",
-            subtitle: "Cool Pay",
-            imgUrl: "/images/productSwiper/coolPay.jpg",
-            lineaUrl: "/productos/coolPay"
-          },
-          {
-            title: "Reconocimiento Facial",
-            subtitle: "Matching de Rostros",
-            imgUrl: "/images/productSwiper/facialRecog.jpg",
-            isPdf: true,
-            lineaUrl: "https://drive.google.com/file/d/1FCHX6KrmZC7kT1uitjuO-cPLE34dkpqL/view?usp=drive_link"
-          },
-          {
-            title: "Onboarding",
-            subtitle: "Validación de Identidad",
-            imgUrl: "/images/productSwiper/identidad.png",
-            lineaUrl: "/productos/reconocimientoFacial"
-          },
-          {
-            title: "Salud",
-            imgUrl: "/images/productSwiper/salud.jpg",
-            lineaUrl: "/productos/lineaSalud"
-          }
-    ]
+  const slider = [
+    {
+        title: "ΩMEGA",
+        subtitle: "by Power",
+        imgUrl: "/images/productos/lineaOmega/omega5000.png",
+        lineaUrl: "/productos/lineaOmega"
+      },
+      {
+        title: "Control Fronterizo",
+        imgUrl: "/images/productSwiper/controlFronterizo.jpg",
+        lineaUrl: "/productos/controlFronterizo"
+      },
+      {
+        title: "Cajeros",
+        subtitle: "Cajero Express",
+        imgUrl: "/images/productos/cajeros/grgH22.png",
+        lineaUrl: "/productos/Cajeros"
+      },
+      {
+        title: "Servicio Técnico",
+        imgUrl: "/images/productSwiper/servTecnico.jpg",
+        lineaUrl: "/servicioTecnico"
+      },
+      {
+        title: "Flujo de Personas",
+        subtitle: "Turnos",
+        isPdf: true,
+        imgUrl: "/images/productSwiper/turnos.jpg",
+        lineaUrl: "https://drive.google.com/file/d/1nhn8qiKG7ScDzRjP7FW-rKAes_XY6gR4/view?usp=drive_link"
+      },
+      {
+        title: "Sistema de Recaudación",
+        subtitle: "Cool Pay",
+        imgUrl: "/images/productSwiper/coolPay.jpg",
+        lineaUrl: "/productos/coolPay"
+      },
+      {
+        title: "Reconocimiento Facial",
+        subtitle: "Matching de Rostros",
+        imgUrl: "/images/productSwiper/facialRecog.jpg",
+        isPdf: true,
+        lineaUrl: "https://drive.google.com/file/d/1FCHX6KrmZC7kT1uitjuO-cPLE34dkpqL/view?usp=drive_link"
+      },
+      {
+        title: "Onboarding",
+        subtitle: "Validación de Identidad",
+        imgUrl: "/images/productSwiper/identidad.png",
+        lineaUrl: "/productos/onboarding"
+      },
+      {
+        title: "Salud",
+        imgUrl: "/images/productSwiper/salud.jpg",
+        lineaUrl: "/productos/lineaSalud"
+      }
+]
 
 
   return (

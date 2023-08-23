@@ -17,6 +17,9 @@ export const metadata = {
       default: 'Power Consultant S.A.',
       template: `%s | Power Consultant `
     },
+    openGraph: {
+      images: '/images/logoPower.png',
+    },
     description: 'Cajeros Automaticos | Soluciones Tecnológicas'
 }
 

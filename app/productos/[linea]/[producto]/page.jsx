@@ -1,7 +1,7 @@
 import ProductPage from "@components/productos/ProductPage"
 
 import { productosOmega } from "@public/productosOmega"
-import { productosGRG } from "@public/productosGRG"
+import { productosGRG } from "@public/cajeros"
 import { productosSalud } from "@public/productosSalud"
 
 

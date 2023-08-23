@@ -1,6 +1,6 @@
 import ProductGrid from "@components/productos/ProductGrid"
 import { productosOmega } from "@public/productosOmega"
-import { productosGRG } from "@public/productosGRG"
+import { cajeros } from "@public/cajeros"
 import { productosSalud } from "@public/productosSalud"
 import Link from "next/link"
 
@@ -12,7 +12,7 @@ export async function generateMetadata({ params }) {
       return {
         title: 'Línea Omega',
         openGraph: {
-          images: '/images/productos/lineaOmega/omega500.png',
+          images: '/images/productos/lineaOmega/omega5000.png',
         },
       }
     } 

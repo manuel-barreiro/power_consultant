@@ -28,7 +28,7 @@ const ProductSwiper = () => {
           {
             title: "Cajeros",
             subtitle: "Cajero Express",
-            imgUrl: "/images/productos/lineaGRG/grgH22.png",
+            imgUrl: "/images/productos/cajeros/grgH22.png",
             lineaUrl: "/productos/Cajeros"
           },
           {
