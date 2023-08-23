@@ -43,7 +43,7 @@ export const cajeros = [
             'Impresión de cheques tinta ferromagnética',
             'Impresión A4 de resúmenes de cuenta, tarjetas, etc'
           ],
-          "isPdf" :  "https://drive.google.com/file/d/1Mq4H2b9bdMqMwzvCNp3-S9ZE4lw3vZA7/view?usp=drive_link",
+          "isPdf" :  "https://drive.google.com/file/d/1aHH0wqZQRFT_GfhOwy4FWNTUEA_tEGQC/view?usp=drive_link",
           "isVideo" : "https://drive.google.com/file/d/1xhYwPfCFR7O3y67UnW2dFv9OFn_hDSB2/view?usp=drive_link"
   
     },

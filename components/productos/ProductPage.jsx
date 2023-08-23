@@ -70,8 +70,8 @@ const ProductPage = ({ linea, img, name, car, tdn, parrafo, caracteristicas, tip
 
                 {!parrafo && 
                   <ul className='mt-6 font-medium'>
-                    {charac && caracteristicas.map((item) => (
-                      <li className='flex gap-2 items-center mb-2'>
+                    {charac && caracteristicas.map((item, index) => (
+                      <li key={index} className='flex gap-2 items-center mb-2'>
                         <span>
                           <IoArrowRedoCircleSharp className='w-8 text-primaryOrange'/>
                         </span>
@@ -83,16 +83,16 @@ const ProductPage = ({ linea, img, name, car, tdn, parrafo, caracteristicas, tip
                 
                 {parrafo && 
                   <div className='flex flex-col gap-4 items-start text-justify text-sm font-medium'>
-                    {caracteristicas.map((item) => (
-                      <p key={item.length}>{item}</p>
+                    {caracteristicas.map((item, index) => (
+                      <p key={index}>{item}</p>
                     ))}
                   </div>
 
                 }
 
                 <ul className='font-medium'>
-                  {typeOfBss && tipoDeNegocio.map((item) => (
-                    <li className='flex gap-2 items-center mb-2'>
+                  {typeOfBss && tipoDeNegocio.map((item, index) => (
+                    <li key={index} className='flex gap-2 items-center mb-2'>
                       <span>
                         <IoArrowRedoCircleSharp className='w-8 text-primaryOrange'/>
                       </span>

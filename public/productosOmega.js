@@ -68,7 +68,7 @@ export const productosOmega = [
             'Impresión de cheques tinta ferromagnética',
             'Impresión A4 de resúmenes de cuenta, tarjetas, etc'
           ],
-          "isPdf" :  "https://drive.google.com/file/d/14TYdoK5n4kFFg_L1JQb3DWHrVxIyd62m/view?usp=drive_link",  
+          "isPdf" :  "https://drive.google.com/file/d/1aHH0wqZQRFT_GfhOwy4FWNTUEA_tEGQC/view?usp=drive_link",  
     },
     {
         "id": 2,
