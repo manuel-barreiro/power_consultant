@@ -30,7 +30,6 @@ export async function generateMetadata({ params }) {
           canonical: `/productos/${productoBuscado.cat}/${productoBuscado.urlName}`
         },
         
-        
       }
 
 

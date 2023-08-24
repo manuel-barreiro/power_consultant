@@ -4,6 +4,9 @@ import { coolPay } from "@public";
 export const metadata = {
   title: 'Sistema de Recaudación',
   description: 'El Sistema Cool Pay integra el hardware y software necesario para lograr la más óptima solución de los sistemas de cobro.", "Es una solución ideal para todo aquel negocio que maneje recaudaciones de cobro en efectivo o electrónico, por ende su uso es escalable a varias industrias y negocios, tales como telefonía, estacionamiento, cines, restaurants, clubes, municipios, y la lista podría continuar.',
+  openGraph: {
+    images: '/images/productos/soluciones/coolPay.png',
+  },
   alternates: {
     canonical: '/productos/coolPay'
   }
