@@ -13,9 +13,7 @@ export async function generateMetadata({ params }) {
     if (linea === 'lineaOmega'){
       return {
         title: 'Línea Omega',
-        openGraph: {
-          images: '/images/productos/logos/omegaLogo.png',
-        },
+        description: 'Cajeros Automáticos',
         alternates: {
           canonical: '/productos/lineaOmega'
         }
@@ -25,9 +23,7 @@ export async function generateMetadata({ params }) {
     else if (linea === 'cajeros'){
       return {
         title: 'Cajeros',
-        openGraph: {
-          images: '/images/productos/logos/grgLogo.png',
-        },
+        description: 'Cajeros Automáticos',
         alternates: {
           canonical: '/productos/cajeros'
         }
@@ -36,9 +32,7 @@ export async function generateMetadata({ params }) {
     else if (linea === 'lineaSalud') {
       return {
         title: 'Línea Salud',
-        openGraph: {
-          images: '/images/productos/logos/saludLogo.png',
-        },
+        description: 'Soluciones Tecnológicas para el ámbito de la Salud',
         alternates: {
           canonical: '/productos/lineaSalud'
         }
