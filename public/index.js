@@ -41,8 +41,9 @@ import supervielle from './images/logosClientes/supervielle.png'
 import ypf from './images/logosClientes/ypf.png'
 
 // Logos Líneas
-import omegaLogo from './images/productos/lineaOmega/omegaLogo.png'
-import grgLogo from './images/productos/cajeros/grgLogo.png'
+import omegaLogo from './images/productos/logos/omegaLogo.png'
+import cajerosLogo from './images/productos/logos/cajerosLogo.png'
+import saludLogo from './images/productos/logos/saludLogo.png'
 
 // Productos
 
@@ -97,7 +98,7 @@ export {
     aerolineas, anses, bancoChaco, bancoChubut, bancoCiudad, bancoColumbia, bancoIndustrial, bancoPatagonia, bancoTierraDelFuego, bancoProvincia, BBVA, cemic, cencosud, codere, cordial, globalBlue, rapidoArgentino, siderca, telefonica, ternium, univPalermo, allianz, atos, bancoCoinag,bancoCorrientes, bancoPiano, banelco, brinks, fadel, itau, movistar, supervielle, ypf,
 
     // Logos líneas
-    omegaLogo, grgLogo,
+    omegaLogo, cajerosLogo, saludLogo,
 
     //Línea Omega
     omega5000, omega42, omega47, omega50, omega500, omega600, omega1000, omega1800, omega3600, omega5000M,
