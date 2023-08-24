@@ -134,7 +134,7 @@ const ProductSwiper = () => {
                                     <div>
                                         <span className="w-10 h-10 text-2xl bg-primaryOrange rounded-full inline-flex items-center justify-center hover:text-textGreen cursor-pointer hover:-translate-y-1 transition-all duration-300 mb-4"><FiArrowUp/></span>
                                         <h2 className='text-3xl font-bold text-white mb-2 text-center'>{data.title}</h2>
-                                        {data.subtitle && <h4 className='text-xl font-bold text-white mb-2 text-center'>{data.subtitle}</h4> }
+                                        {data.subtitle && <h3 className='text-xl font-bold text-white mb-2 text-center'>{data.subtitle}</h3> }
                                     </div>
                                 </Link>
                             </SwiperSlide>

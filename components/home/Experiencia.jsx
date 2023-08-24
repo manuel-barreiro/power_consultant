@@ -57,7 +57,7 @@ const Experiencia = () => {
                     </div>
 
                     <div className="md:w-[50%] flex flex-col gap-5 items-start">
-                        <h1 className="text-2xl md:text-4xl text-primaryOrange font-bold">El <span className='font-extrabold'>compromiso</span> y la <span className='font-extrabold'>calidad</span> como banderas</h1>
+                        <h2 className="text-2xl md:text-4xl text-primaryOrange font-bold">El <span className='font-extrabold'>compromiso</span> y la <span className='font-extrabold'>calidad</span> como banderas</h2>
                         <p className="text-justify">Lideramos la industria, acompañando siempre a nuestros clientes y poniendo su satisfacción como máxima prioridad.</p>
                         <p>Contamos con certificación <span className='font-semibold'>ISO:9001</span>, cumpliendo los más altos estándares de calidad en el mercado.</p>
                         <Link href="/contacto">

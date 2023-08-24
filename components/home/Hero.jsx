@@ -45,7 +45,7 @@ const Hero = () => {
                     transition= {{ duration: 1, delay: 0.7 }} 
                     className="basis-1/3"
                 >
-                    <Image src={hero} className="hover:scale-105 ease-in-out duration-300"/>
+                    <Image src={hero} priority={true} title="Cajeros Automáticos y Soluciones Tecnológicas" alt="Cajeros Automáticos y Soluciones Tecnológicas" className="hover:scale-105 ease-in-out duration-300"/>
                 </motion.div>
 
             </div>

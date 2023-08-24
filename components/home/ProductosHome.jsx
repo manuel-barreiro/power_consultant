@@ -80,7 +80,7 @@ const ProductosHome = () => {
                 <div className='md:basis-1/3 max-w-lg'>
                     <div>
                         <span className='text-gray-500'>INNOVACIÓN A TU SERVICIO</span>
-                        <h1 className='font-bold bg-gradient-to-tr from-neutral-900 to-neutral-500 bg-clip-text text-transparent text-3xl mb-3 mt-2'>Potenciá tu negocio con nuestras soluciones</h1>
+                        <h2 className='font-bold bg-gradient-to-tr from-neutral-900 to-neutral-500 bg-clip-text text-transparent text-3xl mb-3 mt-2'>Potenciá tu negocio con nuestras soluciones</h2>
                         <hr className='bg-primaryOrange w-28 h-1' />
                         
                         
@@ -129,7 +129,7 @@ const ProductosHome = () => {
                                 <Link href={data.lineaUrl} target={data.isPdf ? "_blank" : "_self"}>
                                     <div>
                                         <span className="w-10 h-10 text-2xl bg-primaryOrange rounded-full inline-flex items-center justify-center hover:text-textGreen cursor-pointer hover:-translate-y-1 transition-all duration-300 mb-4"><FiArrowUp/></span>
-                                        <h2 className='text-3xl font-bold text-white mb-2 text-center'>{data.title}</h2>
+                                        <h3 className='text-3xl font-bold text-white mb-2 text-center'>{data.title}</h3>
                                         {data.subtitle && <h4 className='text-xl font-bold text-white mb-2 text-center'>{data.subtitle}</h4> }
                                     </div>
                                 </Link>

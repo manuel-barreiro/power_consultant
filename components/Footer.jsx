@@ -19,7 +19,7 @@ const Footer = () => {
                 </div>
 
                 <div className='flex flex-col gap-4 justify-center items-center'>
-                    <Image src={logoPower} width={150} />
+                    <Image src={logoPower} width={150} title="Power Consultant Logo" alt="Power Consultant Logo" />
 
                     <div className='flex justify-evenly items-center gap-4'>
                         <a href="https://www.linkedin.com/company/power-consultant/" target="_blank">

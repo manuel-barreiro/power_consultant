@@ -27,6 +27,18 @@ import siderca from './images/logosClientes/siderca.png'
 import telefonica from './images/logosClientes/telefonica.png'
 import ternium from './images/logosClientes/ternium.png'
 import univPalermo from './images/logosClientes/univPalermo.png'
+import allianz from './images/logosClientes/allianz.png'
+import atos from './images/logosClientes/atos.png'
+import bancoCoinag from './images/logosClientes/bancoCoinag.png'
+import bancoCorrientes from './images/logosClientes/bancoCorrientes.png'
+import bancoPiano from './images/logosClientes/bancoPiano.png'
+import banelco from './images/logosClientes/banelco.png'
+import brinks from './images/logosClientes/brinks.png'
+import fadel from './images/logosClientes/fadel.png'
+import itau from './images/logosClientes/itau.png'
+import movistar from './images/logosClientes/movistar.png'
+import supervielle from './images/logosClientes/supervielle.png'
+import ypf from './images/logosClientes/ypf.png'
 
 // Logos Líneas
 import omegaLogo from './images/productos/lineaOmega/omegaLogo.png'
@@ -82,7 +94,7 @@ export {
     logoPower, hero, quienesSomos, atm, 
     
     // Clientes
-    aerolineas, anses, bancoChaco, bancoChubut, bancoCiudad, bancoColumbia, bancoIndustrial, bancoPatagonia, bancoTierraDelFuego, bancoProvincia, BBVA, cemic, cencosud, codere, cordial, globalBlue, rapidoArgentino, siderca, telefonica, ternium, univPalermo,
+    aerolineas, anses, bancoChaco, bancoChubut, bancoCiudad, bancoColumbia, bancoIndustrial, bancoPatagonia, bancoTierraDelFuego, bancoProvincia, BBVA, cemic, cencosud, codere, cordial, globalBlue, rapidoArgentino, siderca, telefonica, ternium, univPalermo, allianz, atos, bancoCoinag,bancoCorrientes, bancoPiano, banelco, brinks, fadel, itau, movistar, supervielle, ypf,
 
     // Logos líneas
     omegaLogo, grgLogo,

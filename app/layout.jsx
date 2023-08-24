@@ -13,14 +13,23 @@ const montserrat = Montserrat({
 // Metadata
 export const metadata = {
     metadataBase: new URL("https://www.powerconsultant.com.ar/"),
+    alternates: {
+      canonical: 'https://www.powerconsultant.com.ar/'
+    },
     title: {
       default: 'Power Consultant S.A.',
       template: `%s | Power Consultant `
     },
+    description: 'Power Consultant está basada en la conjunción de Industria, Conocimiento, Tecnología, Innovación y Servicio.',
+    themeColor: 'white',
     openGraph: {
-      images: '/images/logoPower.png',
+      images: '/favicon.ico',
+      title: 'Power Consultant S.A.',
+      description: 'Power Consultant está basada en la conjunción de Industria, Conocimiento, Tecnología, Innovación y Servicio.',
+      type: "website",
+      url: "https://www.powerconsultant.com.ar/"
     },
-    description: 'Cajeros Automaticos | Soluciones Tecnológicas'
+    
 }
 
 // Layout Components

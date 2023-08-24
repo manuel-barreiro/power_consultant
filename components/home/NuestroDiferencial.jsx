@@ -15,7 +15,7 @@ const NuestroDiferencial = () => {
             <div className="flex flex-col md:flex-row gap-10">
 
                 <div className="flex flex-col gap-2 p-6 border-2 border-slate-300/60 rounded">
-                    <Image src={atm}/>
+                    <Image src={atm} title="Power Consultant Cajeros Automáticos" alt="Power Consultant Cajeros Automáticos"/>
                     <h4 className="font-semibold text-lg">Vanguardia en productos</h4>
                     <p className="font-base text-slate-500">La más innovadora tecnología a disposición de tu empresa.</p>
                 </div>

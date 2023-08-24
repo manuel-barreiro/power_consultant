@@ -5,7 +5,14 @@ import { argentina } from '@public';
 
 export const metadata = {
     title: 'Servicio Técnico',
-    description: 'Se brinda atención directa a los usuarios, resolviendo la mayor cantidad de solicitudes de servicio en el primer contacto en línea o derivamos a los sectores de soporte necesarios para la solución, realizando un seguimiento detallado de la evolución del incidente. Se dispone de una herramienta de software que permite la gestión integral del servicio.',
+    description: 'Se brinda atención directa a los usuarios, resolviendo la mayor cantidad de solicitudes de servicio en el primer contacto en línea.',
+    openGraph: {
+        images: '/favicon.ico',
+        title: 'Servicio Técnico | Power Consultant',
+        description: 'Se brinda atención directa a los usuarios, resolviendo la mayor cantidad de solicitudes de servicio en el primer contacto en línea.',
+        type: "website",
+        url: "https://www.powerconsultant.com.ar/servicioTecnico"
+      },
     alternates: {
         canonical: '/servicioTecnico'
     }
@@ -15,7 +22,7 @@ export default function page() {
   return (
     <section className='w-full h-auto'>
 
-        <div className='mx-auto text-white relative w-full h-full container px-8 md:px-32 mx-auto"'>
+        <div className='mx-auto text-white relative w-full h-full container px-8 md:px-32'>
 
             <div className='py-10'>
                 <span className='text-gray-500 flex items-center gap-2'> <FaGears />SERVICIO TÉCNICO DE MANTENIMIENTO</span>
