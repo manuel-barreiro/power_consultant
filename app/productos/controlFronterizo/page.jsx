@@ -6,6 +6,10 @@ export const metadata = {
   description: 'Sabemos lo importante que es hoy agilizar los procesos en el lobby de migración de los puestos fronterizos, puertos y aeropuertos, sin perder los altos niveles de seguridad. También el factor estratégico de abrir nuevas bocas de acceso internacional al país para facilitar el desarrollo económico regional, poder aumentar a bajo costo, la capilaridad y la accesibilidad del sistema migratorio a fin de agilizar los accesos.", "Cualquiera de los modelos de este producto, pueden utilizarse en los distintos puestos de ingreso al país. La ventaja de operar las 24 hs. los 7 días de la semana sin requerir de RRHH adicionales, convierte a esta solución en una herramienta extraordinaria para poder realizar una migración rápida y segura.',
   openGraph: {
     images: '/images/productos/soluciones/omega47abc.png',
+    title: 'Control Fronterizo',
+    description: 'Sabemos lo importante que es hoy agilizar los procesos en el lobby de migración de los puestos fronterizos, puertos y aeropuertos, sin perder los altos niveles de seguridad. También el factor estratégico de abrir nuevas bocas de acceso internacional al país para facilitar el desarrollo económico regional, poder aumentar a bajo costo, la capilaridad y la accesibilidad del sistema migratorio a fin de agilizar los accesos.", "Cualquiera de los modelos de este producto, pueden utilizarse en los distintos puestos de ingreso al país. La ventaja de operar las 24 hs. los 7 días de la semana sin requerir de RRHH adicionales, convierte a esta solución en una herramienta extraordinaria para poder realizar una migración rápida y segura.',
+    url: 'www.powerconsultant.com.ar/productos/controlFronterizo'
+
   },
   alternates: {
     canonical: '/productos/controlFronterizo'

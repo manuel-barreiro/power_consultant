@@ -6,6 +6,9 @@ export const metadata = {
   description: 'El proceso de onboarding con validación de identidad y reconocimiento facial combina la verificación de documentación y la identidad de una persona con la tecnología de reconocimiento facial para asegurar que la persona que se registra es quien dice ser.',
   openGraph: {
     images: '/images/productos/soluciones/omega47identidad.png',
+    title: 'Onboarding',
+    description: 'El proceso de onboarding con validación de identidad y reconocimiento facial combina la verificación de documentación y la identidad de una persona con la tecnología de reconocimiento facial para asegurar que la persona que se registra es quien dice ser.',
+    url: 'www.powerconsultant.com.ar/productos/onboarding'
   },
   alternates: {
     canonical: '/productos/onboarding'

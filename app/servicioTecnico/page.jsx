@@ -7,10 +7,8 @@ export const metadata = {
     title: 'Servicio Técnico',
     description: 'Se brinda atención directa a los usuarios, resolviendo la mayor cantidad de solicitudes de servicio en el primer contacto en línea.',
     openGraph: {
-        images: '/favicon.ico',
         title: 'Servicio Técnico | Power Consultant',
         description: 'Se brinda atención directa a los usuarios, resolviendo la mayor cantidad de solicitudes de servicio en el primer contacto en línea.',
-        type: "website",
         url: "https://www.powerconsultant.com.ar/servicioTecnico"
       },
     alternates: {
