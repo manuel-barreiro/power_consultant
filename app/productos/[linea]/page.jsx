@@ -16,6 +16,11 @@ export async function generateMetadata({ params }) {
         description: 'Cajeros Automáticos',
         alternates: {
           canonical: '/productos/lineaOmega'
+        },
+        openGraph: {
+          title: 'Línea Omega | Power Consultant',
+          description: 'Cajeros Automáticos',
+          url: "https://www.powerconsultant.com.ar/productos/lineaOmega"
         }
         
       }
@@ -26,16 +31,27 @@ export async function generateMetadata({ params }) {
         description: 'Cajeros Automáticos',
         alternates: {
           canonical: '/productos/cajeros'
+        },
+        openGraph: {
+          title: 'Cajeros | Power Consultant',
+          description: 'Cajeros Automáticos',
+          url: "https://www.powerconsultant.com.ar/productos/cajeros"
         }
       }
     }
     else if (linea === 'lineaSalud') {
       return {
         title: 'Línea Salud',
-        description: 'Soluciones Tecnológicas para el ámbito de la Salud',
+        description: 'Soluciones tecnológicas para el ámbito de la salud',
         alternates: {
           canonical: '/productos/lineaSalud'
+        },
+        openGraph: {
+          title: 'Línea Salud | Power Consultant',
+          description: 'Soluciones tecnológicas para el ámbito de la salud',
+          url: "https://www.powerconsultant.com.ar/productos/lineaSalud"
         }
+        
       }
     }
 
