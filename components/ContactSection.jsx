@@ -22,8 +22,7 @@ export default function page() {
             <motion.div
             variants={cardAnimationVariants}
             initial="initial"
-            whileInView="animate"
-            viewport={{ once: true }}
+            animate="animate"
             transition= {{ duration: 0.5, delay: 0.5 }} 
             className="p-4 w-full xl:w-1/3">
               <div className="flex rounded-lg h-full bg-gray-100 p-8 flex-col">
@@ -43,8 +42,7 @@ export default function page() {
             <motion.div
             variants={cardAnimationVariants}
             initial="initial"
-            whileInView="animate"
-            viewport={{ once: true }}
+            animate="animate"
             transition= {{ duration: 0.5, delay: 0.6 }} 
             className="p-4 w-full xl:w-1/3">
               <div className="flex rounded-lg h-full bg-gray-100 p-8 flex-col">
@@ -64,8 +62,7 @@ export default function page() {
             <motion.div
             variants={cardAnimationVariants}
             initial="initial"
-            whileInView="animate"
-            viewport={{ once: true }}
+            animate="animate"
             transition= {{ duration: 0.5, delay: 0.7 }} 
             className="p-4 w-full xl:w-1/3">
               <div className="flex rounded-lg h-full bg-gray-100 p-8 flex-col">
