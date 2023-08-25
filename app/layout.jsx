@@ -13,6 +13,7 @@ const montserrat = Montserrat({
 // Metadata
 export const metadata = {
     metadataBase: new URL("https://www.powerconsultant.com.ar/"),
+    keywords: ['Power Consultant', 'Cajero', 'Cajero Automático', 'ATM', 'Argentina', 'Control Fronterizo', 'Control Identidad', 'Innovación', 'Salud'],
     alternates: {
       canonical: 'https://www.powerconsultant.com.ar/'
     },

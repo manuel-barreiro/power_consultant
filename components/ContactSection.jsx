@@ -10,7 +10,7 @@ export default function page() {
     }
   
     return (
-      <section name="contacto" className="text-gray-600 font-primary py-16 mx-auto container px-8 md:px-32">
+      <section name="contacto" className="text-gray-600 font-primary py-16 mx-auto container px-8 md:px-32 font-montserrat">
         <div className="">
           <div className="flex flex-col text-center w-full mb-14">
             <h1 className="sm:text-5xl text-4xl font-bold text-primaryOrange mb-2">Contactate con nosotros</h1>
@@ -30,11 +30,11 @@ export default function page() {
                   <div className="w-8 h-8 p-2 mr-3 inline-flex items-center justify-center rounded-full bg-primaryOrange/80 text-white flex-shrink-0">
                     <FaWhatsapp size={60} />
                   </div>
-                  <h2 className="text-gray-900 text-lg title-font font-medium">Whatsapp</h2>
+                  <h2 className="text-gray-900 text-lg title-font font-medium">WhatsApp</h2>
                 </div>
                 <div className="flex-grow">
                   <p className="leading-relaxed text-md md:text-lg lg:text-xl text-black">+54 9 11 4494-0763</p>
-                  <p className='font-secondary mt-4'>Contactanos a nuestro Whatsapp y un asesor responderá tu consulta a la brevedad.</p>
+                  <p className='font-secondary mt-4'>Contactanos a nuestro WhatsApp y un asesor responderá tu consulta a la brevedad.</p>
                 </div>
               </div>
             </motion.div>
