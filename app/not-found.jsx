@@ -9,15 +9,15 @@ export default function NotFound() {
   return (
     <section>
 
-        <div className="container flex items-center justify-center min-h-screen w-full h-full px-8 md:px-32 mx-auto font-montserrat py-6 sm:py-0">
+        <div className="container flex items-center justify-center w-full h-full px-8 md:px-32 mx-auto font-montserrat py-12">
             <div className="w-full">
                 <div className="flex flex-col items-center max-w-2xl mx-auto text-center">
                     <p className="text-sm font-medium text-primaryOrange">ERROR 404</p>
                     <h1 className="mt-3 text-2xl font-semibold md:text-3xl bg-gradient-to-tr from-neutral-900 to-neutral-500 bg-clip-text text-transparent">No encontramos lo que estás buscando.</h1>
 
-                    <div className="flex items-center w-full mt-6 gap-x-3 shrink-0 sm:w-auto">
-                        <Link href="/" target="_self"> 
-                            <button className=" flex items-center justify-center gap-x-2 w-auto px-5 py-2 text-sm rounded-lg text-white bg-primaryOrange border border-primaryOrange hover:bg-white hover:text-primaryOrange duration-300">
+                    <div className="flex items-center justify-center w-full mt-6 gap-x-3 shrink-0 sm:w-auto">
+                        <Link href="/"> 
+                            <button className="flex items-center justify-center gap-x-2 w-auto px-5 py-2 text-sm rounded-lg text-white bg-primaryOrange border border-primaryOrange hover:bg-white hover:text-primaryOrange duration-300">
                                 <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" strokeWidth="1.5" stroke="currentColor" className="w-5 h-5 rtl:rotate-180">
                                     <path strokeLinecap="round" strokeLinejoin="round" d="M6.75 15.75L3 12m0 0l3.75-3.75M3 12h18" />
                                 </svg>
