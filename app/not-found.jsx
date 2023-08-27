@@ -35,13 +35,13 @@ export default function NotFound() {
 
                         <p className="mt-2 text-gray-500">Te presentamos un catálogo con nuestras innovadoras soluciones tecnológicas.</p>
 
-                        <Link href="/productos" className="inline-flex items-center mt-4 text-sm text-primaryOrange underline-offset-4 gap-x-2 hover:underline">
+                        <a href="/productos" className="inline-flex items-center mt-4 text-sm text-primaryOrange underline-offset-4 gap-x-2 hover:underline">
                             <span>Visitar</span>
 
                             <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" strokeWidth="1.5" stroke="currentColor" className="w-5 h-5 rtl:rotate-180">
                                 <path strokeLinecap="round" strokeLinejoin="round" d="M17.25 8.25L21 12m0 0l-3.75 3.75M21 12H3" />
                             </svg>
-                        </Link>
+                        </a>
                     </div>
 
                     <div className="p-6 rounded-lg bg-gray-100">

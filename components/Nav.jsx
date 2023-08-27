@@ -53,7 +53,7 @@ const Nav = () => {
                   Home
             </motion.li>
           </Link>
-          <Link 
+          <a 
             href="/productos"
             className="
                 hover:scale-105 
@@ -68,7 +68,7 @@ const Nav = () => {
             >
                   Productos
             </motion.li>
-          </Link>
+          </a>
           <Link 
             href="/servicioTecnico"
             className="
@@ -146,7 +146,7 @@ const Nav = () => {
                                             Home
                                         </motion.li>
                                     </Link>
-                                    <Link 
+                                    <a 
                                         href="/productos"
                                         onClick={handleShowMenu} 
                                         className='font-medium hover:text-primaryOrange hover:underline underline-offset-8 decoration-primaryOrange cursor-pointer duration-300 nav-link'
@@ -162,7 +162,7 @@ const Nav = () => {
                                         >
                                             Productos
                                         </motion.li>
-                                    </Link>
+                                    </a>
                                     <Link
                                         href="/servicioTecnico"
                                         onClick={handleShowMenu} 
