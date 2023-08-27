@@ -3,6 +3,7 @@ import ProductPage from "@components/productos/ProductPage"
 import { productosOmega } from "@public/productosOmega"
 import { cajeros } from "@public/cajeros"
 import { productosSalud } from "@public/productosSalud"
+import { notFound } from 'next/navigation'
 
 export async function generateMetadata({ params }) {
 
@@ -16,9 +17,16 @@ export async function generateMetadata({ params }) {
     else if (params.linea === 'lineaSalud') {
         return productosSalud
     }
+    else {
+      notFound()
+    }
 }
 
   const productoBuscado = definirLinea().find((item) => item.urlName === params.producto);
+
+  if (!productoBuscado) {
+    notFound()
+  }
 
       return {
         title: productoBuscado.name,

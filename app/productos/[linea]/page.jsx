@@ -5,6 +5,7 @@ import { productosSalud } from "@public/productosSalud"
 import { omegaLogo, cajerosLogo, saludLogo } from '@public'
 import Link from "next/link"
 import Image from "next/image"
+import { notFound } from 'next/navigation'
 
 export async function generateMetadata({ params }) {
 
@@ -52,6 +53,12 @@ export async function generateMetadata({ params }) {
           url: "https://www.powerconsultant.com.ar/productos/lineaSalud"
         }
         
+      }
+    }
+    else {
+      notFound()
+      return {
+        title: 'Error 404'
       }
     }
 

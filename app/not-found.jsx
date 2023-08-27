@@ -67,7 +67,7 @@ export default function NotFound() {
                         
                         <h3 className="mt-6 font-medium text-gray-700">Contactanos</h3>
 
-                        <p className="mt-2 text-gray-500">Un integrante del equipo responderá cualuier consulta que tengas.</p>
+                        <p className="mt-2 text-gray-500">Un integrante del equipo responderá cualquier consulta que tengas.</p>
 
                         <Link href="/contacto" className="inline-flex items-center mt-4 text-sm text-primaryOrange underline-offset-4 gap-x-2 hover:underline">
                             <span>Visitar</span>
