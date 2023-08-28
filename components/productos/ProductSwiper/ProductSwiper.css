@@ -1,4 +1,4 @@
-.myswiper-slider {
+/* .myswiper-slider {
     max-width: 100%;
     height: 400px;
     background-size: cover;
@@ -9,10 +9,10 @@
     display: none;
     opacity: 0;
     padding-bottom: 0.625rem;
-}
+} */
 
 
-.swiper-slide-active div {
+/* .swiper-slide-active div {
     display: flex;
     flex-direction: column;
     justify-content: flex-end;
@@ -22,7 +22,7 @@
     height: 100%;
     padding-bottom: 2rem;
 
-}
+} */
 
 .swiper-pagination-bullet,
 .swiper-pagination-bullet-active {

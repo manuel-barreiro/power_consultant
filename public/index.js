@@ -45,6 +45,17 @@ import omegaLogo from './images/productos/logos/omegaLogo.png'
 import cajerosLogo from './images/productos/logos/cajerosLogo.png'
 import saludLogo from './images/productos/logos/saludLogo.png'
 
+// Product Swiper
+
+import controlFronterizo from './images/productSwiper/controlFronterizo.jpg'
+import coolPaySwiper from './images/productSwiper/coolPay.jpg'
+import facialRecog from './images/productSwiper/facialRecog.jpg'
+import identidad from './images/productSwiper/identidad.png'
+import servTecnico from './images/productSwiper/servTecnico.jpg'
+import salud from './images/productSwiper/salud.jpg'
+import turnos from './images/productSwiper/turnos.jpg'
+
+
 // Productos
 
 // Línea Omega
@@ -96,6 +107,9 @@ export {
     
     // Clientes
     aerolineas, anses, bancoChaco, bancoChubut, bancoCiudad, bancoColumbia, bancoIndustrial, bancoPatagonia, bancoTierraDelFuego, bancoProvincia, BBVA, cemic, cencosud, codere, cordial, globalBlue, rapidoArgentino, siderca, telefonica, ternium, univPalermo, allianz, atos, bancoCoinag,bancoCorrientes, bancoPiano, banelco, brinks, fadel, itau, movistar, supervielle, ypf,
+
+    // Product Swiper
+    controlFronterizo, coolPaySwiper, facialRecog, identidad, servTecnico, salud, turnos, 
 
     // Logos líneas
     omegaLogo, cajerosLogo, saludLogo,
