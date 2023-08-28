@@ -6,6 +6,9 @@
     opacity: 1 ;
 }
 
+:root {
+    --swiper-theme-color: #fff;
+}
 .swiper-pagination-bullet,
 .swiper-pagination-bullet-active {
     background: #fff;
