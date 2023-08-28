@@ -24,7 +24,7 @@ export const metadata = {
     description: 'Power Consultant está basada en la conjunción de Industria, Conocimiento, Tecnología, Innovación y Servicio.',
     themeColor: 'white',
     openGraph: {
-      images: '/apple-icon.png',
+      images: '/favicon.ico',
       title: 'Power Consultant S.A.',
       description: 'Power Consultant está basada en la conjunción de Industria, Conocimiento, Tecnología, Innovación y Servicio.',
       type: "website",
@@ -41,6 +41,9 @@ import Footer from '@components/Footer';
 const RootLayout = ({children}) => {
   return (
     <html lang='es' className={`${montserrat.variable}`}>
+        <head>
+          <meta name="google-site-verification" content="tpL_fagep6l8H-GO8x2JGnqC8F_Nt0LLbiJkX_QvIB0" />
+        </head>
         <body>
           <Nav />
           <main>
