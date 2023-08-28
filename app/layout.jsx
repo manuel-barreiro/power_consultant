@@ -24,7 +24,7 @@ export const metadata = {
     description: 'Power Consultant está basada en la conjunción de Industria, Conocimiento, Tecnología, Innovación y Servicio.',
     themeColor: 'white',
     openGraph: {
-      images: '/favicon.ico',
+      images: '/apple-icon.png',
       title: 'Power Consultant S.A.',
       description: 'Power Consultant está basada en la conjunción de Industria, Conocimiento, Tecnología, Innovación y Servicio.',
       type: "website",
