@@ -128,7 +128,7 @@ const ProductosHome = () => {
                         slider.map(data => (
                             <SwiperSlide key={data.title}>
 
-                              <Link href={data.lineaUrl} target={data.isPdf ? "_blank" : "_self"}>
+                              <Link href={data.lineaUrl} className='cursor-grab' target={data.isPdf ? "_blank" : "_self"}>
 
                                 <div className="h-[400px] relative flex flex-col justify-end items-center w-full">
 
@@ -136,7 +136,7 @@ const ProductosHome = () => {
 
                                   <div className='absolute h-full w-full bg-black/25'></div>
 
-                                  <div className="relative pb-10 flex flex-col justify-evenly items-center">
+                                  <div id="cardText" className="relative pb-10 flex flex-col justify-evenly items-center">
                                       <span className="w-10 h-10 text-2xl bg-primaryOrange rounded-full inline-flex items-center justify-center hover:text-textGreen cursor-pointer hover:-translate-y-1 transition-all duration-300 mb-4">
                                         <FiArrowUp/>
                                       </span>

@@ -1,73 +1,75 @@
 'use client';
 
-import { FiArrowUp } from 'react-icons/fi'
-
-import { Swiper, SwiperSlide } from 'swiper/react'
-import { Pagination, EffectCoverflow, Autoplay } from 'swiper'
-
-import 'swiper/swiper-bundle.min.css'
-import 'swiper/swiper.min.css'
-import './ProductSwiper.css'
+import { FiArrowUp } from 'react-icons/fi';
 import Link from 'next/link';
+import Image from 'next/image';
+
+import { omega5000, grgH22, controlFronterizo, coolPaySwiper, facialRecog, identidad, servTecnico, salud, turnos } from '@public';
+
+import { Swiper, SwiperSlide } from 'swiper/react';
+import { Pagination, EffectCoverflow, Autoplay } from 'swiper';
+import 'swiper/swiper-bundle.min.css';
+import 'swiper/swiper.min.css';
+import './ProductSwiper.css';
 
 
 const ProductSwiper = () => {
     
-    const slider = [
-        {
-            title: "ΩMEGA",
-            subtitle: "by Power",
-            imgUrl: "/images/productos/lineaOmega/omega5000.png",
-            lineaUrl: "/productos/lineaOmega"
-          },
-          {
-            title: "Control Fronterizo",
-            imgUrl: "/images/productSwiper/controlFronterizo.jpg",
-            lineaUrl: "/productos/controlFronterizo"
-          },
-          {
-            title: "Cajeros",
-            subtitle: "Cajero Express",
-            imgUrl: "/images/productos/cajeros/grgH22.png",
-            lineaUrl: "/productos/cajeros"
-          },
-          {
-            title: "Servicio Técnico",
-            imgUrl: "/images/productSwiper/servTecnico.jpg",
-            lineaUrl: "/servicioTecnico"
-          },
-          {
-            title: "Flujo de Personas",
-            subtitle: "Turnos",
-            isPdf: true,
-            imgUrl: "/images/productSwiper/turnos.jpg",
-            lineaUrl: "https://drive.google.com/file/d/1nhn8qiKG7ScDzRjP7FW-rKAes_XY6gR4/view?usp=drive_link"
-          },
-          {
-            title: "Sistema de Recaudación",
-            subtitle: "Cool Pay",
-            imgUrl: "/images/productSwiper/coolPay.jpg",
-            lineaUrl: "/productos/coolPay"
-          },
-          {
-            title: "Reconocimiento Facial",
-            subtitle: "Matching de Rostros",
-            imgUrl: "/images/productSwiper/facialRecog.jpg",
-            isPdf: true,
-            lineaUrl: "https://drive.google.com/file/d/1FCHX6KrmZC7kT1uitjuO-cPLE34dkpqL/view?usp=drive_link"
-          },
-          {
-            title: "Onboarding",
-            subtitle: "Validación de Identidad",
-            imgUrl: "/images/productSwiper/identidad.png",
-            lineaUrl: "/productos/onboarding"
-          },
-          {
-            title: "Salud",
-            imgUrl: "/images/productSwiper/salud.jpg",
-            lineaUrl: "/productos/lineaSalud"
-          }
-    ]
+  const slider = [
+    {
+        title: "ΩMEGA",
+        subtitle: "by Power",
+        img: omega5000,
+        lineaUrl: "/productos/lineaOmega"
+      },
+      {
+        title: "Control Fronterizo",
+        img: controlFronterizo,
+        lineaUrl: "/productos/controlFronterizo"
+      },
+      {
+        title: "Cajeros",
+        subtitle: "Cajero Express",
+        img: grgH22,
+        lineaUrl: "/productos/cajeros"
+      },
+      {
+        title: "Servicio Técnico",
+        img: servTecnico,
+        lineaUrl: "/servicioTecnico"
+      },
+      {
+        title: "Flujo de Personas",
+        subtitle: "Turnos",
+        isPdf: true,
+        img: turnos,
+        lineaUrl: "https://drive.google.com/file/d/1nhn8qiKG7ScDzRjP7FW-rKAes_XY6gR4/view?usp=drive_link"
+      },
+      {
+        title: "Sistema de Recaudación",
+        subtitle: "Cool Pay",
+        img: coolPaySwiper,
+        lineaUrl: "/productos/coolPay"
+      },
+      {
+        title: "Reconocimiento Facial",
+        subtitle: "Matching de Rostros",
+        img: facialRecog,
+        isPdf: true,
+        lineaUrl: "https://drive.google.com/file/d/1FCHX6KrmZC7kT1uitjuO-cPLE34dkpqL/view?usp=drive_link"
+      },
+      {
+        title: "Onboarding",
+        subtitle: "Validación de Identidad",
+        img: identidad,
+        lineaUrl: "/productos/onboarding"
+      },
+      {
+        title: "Salud",
+        img: salud,
+        lineaUrl: "/productos/lineaSalud"
+      }
+]
 
 
   return (
@@ -92,7 +94,7 @@ const ProductSwiper = () => {
                 </div>
 
                 <Swiper
-                className='w-full md:basis-2/3'
+                className='w-full md:w-[60%]'
                 modules={[Pagination, EffectCoverflow, Autoplay]}
                 effect={"coverflow"}
                 grabCursor={true}
@@ -125,21 +127,39 @@ const ProductSwiper = () => {
                         slidesPerView: 3
                     },
                 }}
-                
                 >
                     {
                         slider.map(data => (
-                            <SwiperSlide key={data.title} className="myswiper-slider" style={{ backgroundImage: `url(${data.imgUrl})` }}>
-                                <Link href={data.lineaUrl} target={data.isPdf ? "_blank" : "_self"}>
-                                    <div>
-                                        <span className="w-10 h-10 text-2xl bg-primaryOrange rounded-full inline-flex items-center justify-center hover:text-textGreen cursor-pointer hover:-translate-y-1 transition-all duration-300 mb-4"><FiArrowUp/></span>
-                                        <h2 className='text-3xl font-bold text-white mb-2 text-center'>{data.title}</h2>
-                                        {data.subtitle && <h3 className='text-xl font-bold text-white mb-2 text-center'>{data.subtitle}</h3> }
-                                    </div>
-                                </Link>
+                            <SwiperSlide key={data.title}>
+
+                              <Link href={data.lineaUrl} className='cursor-grab' target={data.isPdf ? "_blank" : "_self"}>
+
+                                <div className="h-[400px] relative flex flex-col justify-end items-center w-full">
+
+                                  <Image src={data.img} priority={true} className="w-full h-full object-cover absolute"/>
+
+                                  <div className='absolute h-full w-full bg-black/25'></div>
+
+                                  <div id="cardText" className="relative pb-10 flex flex-col justify-evenly items-center">
+                                      <span className="w-10 h-10 text-2xl bg-primaryOrange rounded-full inline-flex items-center justify-center hover:text-textGreen cursor-pointer hover:-translate-y-1 transition-all duration-300 mb-4">
+                                        <FiArrowUp/>
+                                      </span>
+                                      <h3 className='text-3xl font-bold text-white mb-2 text-center'>
+                                        {data.title}
+                                      </h3>
+                                      {data.subtitle && <h4 className='text-xl font-bold text-white mb-2 text-center'>
+                                        {data.subtitle}
+                                      </h4>}
+                                  </div>
+
+                                </div>
+
+                              </Link>
+
                             </SwiperSlide>
                         ))
                     }
+
                 </Swiper>
             </div>
         </div>
