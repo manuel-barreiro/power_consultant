@@ -5,6 +5,17 @@ import { cajeros } from "@public/cajeros"
 import { productosSalud } from "@public/productosSalud"
 import { notFound } from 'next/navigation'
 
+export function generateStaticParams() {
+  // Combina los tres arrays en uno solo
+  const allProds = productosOmega.concat(cajeros, productosSalud);
+
+  // Devuelvo los static params en la forma [ { linea: 'lineaOmega', producto: 'omega500' }, { linea: 'lineaOmega', producto: 'omega50' }, ...]
+  return allProds.map((item) => ({
+            linea: item.cat, producto: item.urlName
+            })
+          )
+}
+
 export async function generateMetadata({ params }) {
 
   function definirLinea() {

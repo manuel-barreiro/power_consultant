@@ -7,6 +7,10 @@ import Link from "next/link"
 import Image from "next/image"
 import { notFound } from 'next/navigation'
 
+export function generateStaticParams() {
+  return [{ linea: 'lineaOmega' }, { linea: 'cajeros' }, { linea: 'lineaSalud' }]
+}
+
 export async function generateMetadata({ params }) {
 
   const linea = params.linea
