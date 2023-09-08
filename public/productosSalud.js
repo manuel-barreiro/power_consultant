@@ -1,6 +1,26 @@
-import { totemTurnosWeb, arcoMultifuncion , camaraTermica , desinfeccionConOzono , terminalDeAcceso , termometroInfrarrojo, cabinaDeAtencion, sistemaDeClinicas } from '@public'
+import { totemTurnosWeb, arcoMultifuncion , camaraTermica , desinfeccionConOzono , terminalDeAcceso , termometroInfrarrojo, cabinaDeAtencion, sistemaDeClinicas, logisticaInteligente } from '@public'
 
 export const productosSalud = [
+    {
+        "id": 7,
+        "name": "Logística Inteligente",
+        "img": logisticaInteligente,
+        "cat": "lineaSalud",
+        "urlName": "logisticaInteligente",
+        "car": true,
+        "tdn": false,
+        "parrafo": true,
+        "caracteristicas": [
+            "Hoy Power Consultant es una empresa que opera con tecnología de drones para el servicio de logistica.",
+            "Trabajamos con aeronoves de ultima generación y software de control basado en la Icloud, todo cumpliendo con las normativas de la comunidad europea.",
+            "Nuestros productos permiten entregas más rápidas, fáciles y ecológicas y seguras,  creando rutas de entrega efectivas entre múltiples puntos. ",
+            "Nos dedicamos a crear una solución de entrega entre ciudades, instituciones, totalmente integrada, fácil de usar y con drones altamente confiables.",
+            "Una ruta de entrega aérea directa y preprogramada, que conecta dos ubicaciones, integrando la última tecnología de vanguardia en comunicaciones, procesos informáticos basados en inteligencia artificial y aerodinámica, generan un un sistema de entrega altamente confiable y seguro.",
+            "La logística totalmente autónoma basada en drones puede reducir los tiempos de entrega y consecuentemente reducir significativamente los costos de transporte en comparación con el transporte convencional."
+          ],
+          "isPdf" :  "https://drive.google.com/file/d/1jLxKMBOr-e8dniEhIwCSefJLPqP0OwJx/view?usp=drive_link",
+
+    },
     {
         "id": 0,
         "name": "Cabina de Atención",

@@ -87,6 +87,7 @@ import terminalDeAcceso from './images/productos/lineaSalud/terminalDeAcceso.png
 import termometroInfrarrojo from './images/productos/lineaSalud/termometroInfrarrojo.png'
 import cabinaDeAtencion from './images/productos/lineaSalud/cabinaDeAtencion.png'
 import sistemaDeClinicas from './images/productos/lineaSalud/sistemaDeClinicas.png'
+import logisticaInteligente from './images/productos/lineaSalud/logisticaInteligente.png'
 
 // Soluciones
 
@@ -121,7 +122,7 @@ export {
     omega5000D, grgH22, grgH34, videoTeller, cajeroExpress,
     
     //Línea Salud
-    totemTurnosWeb, arcoMultifuncion , camaraTermica , desinfeccionConOzono , terminalDeAcceso , termometroInfrarrojo, cabinaDeAtencion, sistemaDeClinicas,
+    totemTurnosWeb, arcoMultifuncion , camaraTermica , desinfeccionConOzono , terminalDeAcceso , termometroInfrarrojo, cabinaDeAtencion, sistemaDeClinicas, logisticaInteligente,
 
     //Soluciones
     coolPay, omega47abc, omega47identidad,
