@@ -13,7 +13,7 @@ const Footer = () => {
 
                     <p className='flex justify-center md:justify-start items-center gap-2'><FaLocationDot size={25} className="text-secondaryOrange"/>Grito de Asencio 3544, CABA</p>
                     <p className='flex justify-center md:justify-start items-center gap-2'><FaPhone size={25} className="text-secondaryOrange"/>+54 9 11 5277-9500</p>
-                    <p className='flex justify-center md:justify-start items-center gap-2'><FaWhatsapp size={25} className="text-secondaryOrange"/>+54 9 11 4494-0763</p>
+                    <p className='flex justify-center md:justify-start items-center gap-2'><FaWhatsapp size={25} className="text-secondaryOrange"/>+54 9 11 2825-2850</p>
                     <p className='flex justify-center md:justify-start items-center gap-2'><FaEnvelope size={25} className="text-secondaryOrange"/>info@pc-sa.com.ar</p>
 
                 </div>
@@ -54,7 +54,7 @@ const Footer = () => {
             
         </div>
         <div className="py-6 bg-gradient-to-tr from-orange-400 to-orange-600 text-white text-center h-full">
-                <p>Power Consultant® | 2023 <br/> Todos los derechos reservados</p>
+                <p>Power Consultant® | 2024 <br/> Todos los derechos reservados</p>
         </div>
 
     </footer>

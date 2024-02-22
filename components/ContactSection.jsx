@@ -33,7 +33,7 @@ export default function page() {
                   <h2 className="text-gray-900 text-lg title-font font-medium">WhatsApp</h2>
                 </div>
                 <div className="flex-grow">
-                  <p className="leading-relaxed text-md md:text-lg lg:text-xl text-black">+54 9 11 4494-0763</p>
+                  <p className="leading-relaxed text-md md:text-lg lg:text-xl text-black">+54 9 11 2825-2850</p>
                   <p className='font-secondary mt-4'>Contactanos a nuestro WhatsApp y un asesor responderá tu consulta a la brevedad.</p>
                 </div>
               </div>
